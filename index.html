@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IO Solution — Nong Nooch Digital Marketing</title>
+<title>IO Presentation — Nong Nooch</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
 :root{
@@ -14,609 +14,640 @@
   --fb:#1877F2;--tt:#010101;--tw:#000;--yt:#FF0000;--ig:#E4405F;--line:#06C755;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Sarabun','Inter',sans-serif;background:#c8c8c8;color:var(--tx);line-height:1.72;font-size:13.5px;}
-.pg{width:210mm;min-height:297mm;margin:6px auto;background:var(--wh);box-shadow:0 2px 10px rgba(0,0,0,.1);position:relative;overflow:hidden;}
-@media print{body{background:#fff;}.pg{margin:0;box-shadow:none;page-break-after:always;}@page{margin:0;size:A4;}}
+body{font-family:'Sarabun','Inter',sans-serif;background:#2a2a2a;color:var(--tx);line-height:1.5;font-size:15px;}
 
-.cv{min-height:297mm;display:flex;flex-direction:column;background:linear-gradient(160deg,#052E18 0%,var(--g3) 30%,var(--g1) 70%,#0D8A4D 100%);position:relative;}
-.cv-dots{position:absolute;inset:0;opacity:.04;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px;}
-.cv-top{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30mm 28mm 10mm;position:relative;z-index:1;text-align:center;}
-.cv-icon{width:80px;height:80px;border:2px solid rgba(255,255,255,.3);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:36px;margin-bottom:22px;background:rgba(255,255,255,.08);backdrop-filter:blur(6px);}
-.cv-badge{display:inline-block;background:rgba(200,152,14,.2);border:1px solid rgba(200,152,14,.5);border-radius:20px;padding:5px 18px;font-size:10px;color:var(--gold-l);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:18px;}
-.cv h1{font-size:38px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:10px;letter-spacing:-1px;}
-.cv h1 span{display:block;font-size:20px;font-weight:300;color:rgba(255,255,255,.75);letter-spacing:0;margin-top:8px;}
-.cv-line{width:60px;height:2px;background:var(--gold);margin:20px 0;border-radius:1px;}
-.cv-desc{font-size:13px;color:rgba(255,255,255,.7);max-width:440px;line-height:1.8;}
-.cv-platforms{display:flex;gap:16px;margin-top:28px;}
-.cv-plat{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,.2);}
-.cv-bot{background:rgba(0,0,0,.25);padding:16mm 28mm;z-index:1;position:relative;}
-.cv-meta{display:flex;justify-content:space-between;color:rgba(255,255,255,.75);font-size:11.5px;line-height:2;}
-.cv-meta strong{color:#fff;}
-.cv-meta .lb{color:var(--gold-l);font-size:9.5px;letter-spacing:2px;text-transform:uppercase;}
+.slide{width:960px;height:540px;margin:8px auto;background:var(--wh);box-shadow:0 4px 20px rgba(0,0,0,.25);position:relative;overflow:hidden;display:flex;flex-direction:column;}
 
-.ct{padding:16mm 22mm 20mm;}
-.ph{display:flex;justify-content:space-between;align-items:center;border-bottom:1.5px solid var(--g1);padding-bottom:8px;margin-bottom:18px;}
-.ph .dt{font-size:9.5px;color:var(--g1);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;}
-.ph .pn{font-size:9.5px;color:var(--tx3);}
-.st{display:flex;align-items:center;margin:24px 0 14px;}
-.st:first-child{margin-top:0;}
-.sn{width:28px;height:28px;background:var(--g1);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-right:10px;flex-shrink:0;}
-.st h2{font-size:18px;font-weight:700;color:var(--g3);}
-.st-line{flex:1;height:1px;background:var(--bd);margin-left:14px;}
-.sub{font-size:14px;font-weight:700;color:var(--g1);margin:16px 0 8px;padding-left:12px;border-left:3px solid var(--gold);}
-p{margin-bottom:9px;text-align:justify;}
-.hb{background:var(--ag);border-left:4px solid var(--g1);border-radius:0 8px 8px 0;padding:12px 16px;margin:12px 0;font-size:13px;}
-.hb.gold{background:var(--ago);border-left-color:var(--gold);}
-.sr{display:flex;gap:10px;margin:14px 0;}
-.sc{flex:1;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:12px;text-align:center;}
-.sc .n{font-size:20px;font-weight:800;color:var(--g1);line-height:1.2;}
-.sc .u{font-size:10.5px;color:var(--tx3);margin-top:2px;}
-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12.5px;}
-th{background:var(--g1);color:#fff;padding:8px 10px;text-align:left;font-weight:600;font-size:11.5px;}
-td{padding:8px 10px;border-bottom:1px solid var(--bd);}
-tr:nth-child(even){background:var(--bg);}
-.mg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0;}
-.mg3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0;}
-.mc{border:1px solid var(--bd);border-radius:10px;padding:14px;position:relative;overflow:hidden;}
-.mc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--g1);}
-.mc.gl::before{background:var(--gold);}
-.mc.fb::before{background:var(--fb);}
-.mc.tt::before{background:var(--tt);}
-.mc.tw::before{background:var(--tw);}
-.mc.ig::before{background:var(--ig);}
-.mc.yt::before{background:var(--yt);}
-.mc.ln::before{background:var(--line);}
-.mc h4{font-size:13px;font-weight:700;color:var(--g3);margin-bottom:4px;}
-.mc p{font-size:12px;color:var(--tx2);margin:0;line-height:1.6;}
-.mc .ic{font-size:22px;margin-bottom:6px;}
-.tl{position:relative;padding-left:26px;margin:14px 0;}
-.tl::before{content:'';position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var(--bd);}
-.ti{position:relative;margin-bottom:16px;}
-.ti::before{content:'';position:absolute;left:-20px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--g1);border:2px solid #fff;box-shadow:0 0 0 2px var(--g1);}
-.ti.ac::before{background:var(--gold);box-shadow:0 0 0 2px var(--gold);}
-.ti h4{font-size:13px;font-weight:700;color:var(--g3);margin-bottom:2px;}
-.ti .dur{font-size:10.5px;color:var(--gold-d);font-weight:600;margin-bottom:3px;}
-.ti p{font-size:12px;color:var(--tx2);margin:0;line-height:1.7;}
-.pt th{text-align:center;}
-.pt td{text-align:center;}
-.pt td:first-child{text-align:left;}
-.tr-t{background:var(--g1)!important;color:#fff;font-weight:700;}
-.tr-t td{color:#fff;border:none;}
-.cta{background:linear-gradient(135deg,var(--g3),var(--g1));border-radius:12px;padding:22px;color:#fff;text-align:center;margin:20px 0;}
-.cta h3{font-size:17px;margin-bottom:6px;}
-.cta p{color:rgba(255,255,255,.8);font-size:12.5px;margin:0;}
-.fn{font-size:9.5px;color:var(--tx3);text-align:center;margin-top:24px;padding-top:10px;border-top:1px solid var(--bd);}
-.content-cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin:10px 0;font-size:10px;}
-.cal-h{background:var(--g1);color:#fff;padding:4px;text-align:center;border-radius:4px;font-weight:600;}
-.cal-c{background:var(--bg);border:1px solid var(--bd);padding:6px 4px;text-align:center;border-radius:4px;min-height:42px;}
-.cal-c .ct-type{font-size:9px;padding:2px 4px;border-radius:3px;display:inline-block;margin-top:2px;}
-.ct-vid{background:#FFEBEE;color:#C62828;}
-.ct-pho{background:#E3F2FD;color:#1565C0;}
-.ct-sto{background:#F3E5F5;color:#7B1FA2;}
-.ct-liv{background:#FFF3E0;color:#E65100;}
-.ct-inf{background:#E8F5E9;color:#2E7D32;}
-.funnel{display:flex;flex-direction:column;gap:6px;margin:14px 0;}
-.funnel-step{display:flex;align-items:center;gap:10px;}
-.funnel-bar{height:32px;border-radius:6px;display:flex;align-items:center;padding:0 12px;color:#fff;font-size:11px;font-weight:600;}
-.funnel-label{font-size:11px;color:var(--tx2);min-width:100px;text-align:right;}
+.sl-head{display:flex;align-items:center;padding:12px 36px;background:var(--wh);border-bottom:2px solid var(--g1);flex-shrink:0;}
+.sl-num{width:32px;height:32px;background:var(--g1);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;margin-right:12px;flex-shrink:0;}
+.sl-title{font-size:20px;font-weight:800;color:var(--g3);flex:1;}
+.sl-body{flex:1;padding:14px 36px 10px;overflow:hidden;}
+.sl-foot{padding:6px 36px;background:var(--bg);border-top:1px solid var(--bd);display:flex;justify-content:space-between;font-size:8px;color:var(--tx3);flex-shrink:0;}
 
-/* Flow Diagrams */
-.flow-wrap{margin:12px 0;}
-.flow-row{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;justify-content:center;}
-.flow-box{flex:1;min-width:90px;max-width:130px;background:var(--bg);border:1.5px solid var(--bd);border-radius:12px;padding:10px 8px;text-align:center;position:relative;}
-.flow-icon{font-size:26px;margin-bottom:4px;}
-.flow-title{font-size:12px;font-weight:700;color:var(--g3);margin-bottom:3px;}
-.flow-desc{font-size:10px;color:var(--tx2);line-height:1.5;}
-.flow-arrow{display:flex;align-items:center;font-size:20px;color:var(--gold);padding:0 4px;font-weight:700;}
-.flow-loop{text-align:center;margin-top:8px;font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;background:#E3F2FD;border:1px dashed #1565C0;color:#1565C0;display:inline-block;width:100%;}
+/* Cover */
+.cover{background:linear-gradient(160deg,#052E18 0%,var(--g3) 30%,var(--g1) 70%,#0D8A4D 100%);justify-content:center;align-items:center;text-align:center;padding:36px;}
+.cover .cv-badge{display:inline-block;background:rgba(200,152,14,.2);border:1px solid rgba(200,152,14,.5);border-radius:20px;padding:3px 14px;font-size:9px;color:var(--gold-l);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px;}
+.cover h1{font-size:38px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:4px;}
+.cover h2{font-size:16px;font-weight:300;color:rgba(255,255,255,.75);margin-bottom:16px;}
+.cover .cv-line{width:50px;height:2px;background:var(--gold);margin:12px auto;border-radius:1px;}
+.cover .cv-desc{font-size:12px;color:rgba(255,255,255,.6);max-width:600px;margin:0 auto 20px;}
+.cover .cv-platforms{display:flex;gap:8px;justify-content:center;margin-bottom:20px;}
+.cover .cv-plat{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,.2);}
+.cover .cv-meta{display:flex;justify-content:space-between;width:100%;max-width:600px;color:rgba(255,255,255,.6);font-size:10px;}
+.cover .cv-meta strong{color:#fff;}
+.cover .cv-meta .lb{color:var(--gold-l);font-size:7px;letter-spacing:2px;text-transform:uppercase;}
 
-/* Flow color variants */
-.fb1{border-top:3px solid #1565C0;}.fb2{border-top:3px solid #7B1FA2;}.fb3{border-top:3px solid #E65100;}.fb4{border-top:3px solid var(--fb);}.fb5{border-top:3px solid var(--line);}.fb6{border-top:3px solid var(--g1);}
-.fc1{border-top:3px solid var(--fb);}.fc2{border-top:3px solid var(--ig);}.fc3{border-top:3px solid var(--gold);}.fc4{border-top:3px solid var(--g1);}.fc5{border-top:3px solid #1565C0;}.fc6{border-top:3px solid #E65100;}
-.fw1{border-top:3px solid #1565C0;}.fw2{border-top:3px solid var(--g1);}.fw3{border-top:3px solid #7B1FA2;}.fw4{border-top:3px solid var(--fb);}.fw5{border-top:3px solid var(--gold);}
+/* Helpers */
+.accent{color:var(--g1);font-weight:700;}
+.gold-accent{color:var(--gold-d);font-weight:700;}
+.hl{border-radius:8px;padding:8px 12px;margin:6px 0;font-size:11px;line-height:1.5;}
+.hl.green{background:var(--ag);border-left:3px solid var(--g1);}
+.hl.gold{background:var(--ago);border-left:3px solid var(--gold);}
+.hl.blue{background:#E3F2FD;border-left:3px solid #1565C0;}
+
+/* Stats */
+.stats{display:flex;gap:12px;margin:10px 0;}
+.stat{flex:1;text-align:center;background:var(--bg);border-radius:10px;padding:10px 6px;border:1px solid var(--bd);}
+.stat .n{font-size:24px;font-weight:800;color:var(--g1);line-height:1;}
+.stat .u{font-size:10px;color:var(--tx3);margin-top:2px;}
+
+/* Flow */
+.flow{display:flex;align-items:stretch;gap:0;justify-content:center;margin:8px 0;}
+.flow-box{flex:1;max-width:130px;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:8px 6px;text-align:center;}
+.flow-box .fi{font-size:22px;margin-bottom:2px;}
+.flow-box .ft{font-size:11px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.flow-box .fd{font-size:9px;color:var(--tx2);line-height:1.35;}
+.flow-arr{display:flex;align-items:center;font-size:18px;color:var(--gold);padding:0 2px;font-weight:700;}
+.flow-note{text-align:center;margin-top:5px;font-size:10px;font-weight:600;padding:4px 12px;border-radius:14px;display:inline-block;width:100%;}
+
+/* Platform cards */
+.plat-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:8px 0;}
+.plat-card{border:1px solid var(--bd);border-radius:9px;padding:10px;position:relative;overflow:hidden;}
+.plat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.plat-card.fb::before{background:var(--fb);}.plat-card.tt::before{background:var(--tt);}.plat-card.tw::before{background:var(--tw);}.plat-card.ig::before{background:var(--ig);}.plat-card.yt::before{background:var(--yt);}.plat-card.ln::before{background:var(--line);}
+.plat-card h4{font-size:12px;font-weight:700;color:var(--g3);margin-bottom:2px;}
+.plat-card p{font-size:9.5px;color:var(--tx2);margin:0;line-height:1.4;}
+.plat-card .pi{font-size:16px;margin-bottom:2px;}
+
+/* Pillars */
+.pillar-row{display:flex;gap:6px;margin:8px 0;}
+.pillar{flex:1;border-radius:9px;padding:8px;text-align:center;color:#fff;}
+.pillar .pe{font-size:20px;margin-bottom:2px;}
+.pillar h4{font-size:11px;font-weight:700;margin-bottom:1px;}
+.pillar p{font-size:9px;opacity:.85;margin:0;line-height:1.3;}
+
+/* IO cards */
+.io-card{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;text-align:center;}
+.io-card .ii{font-size:18px;margin-bottom:2px;}
+.io-card h4{font-size:10px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.io-card p{font-size:8.5px;color:var(--tx2);margin:0;line-height:1.3;}
+
+/* Funnel */
+.fun-step{display:flex;align-items:center;gap:6px;}
+.fun-label{font-size:9px;color:var(--tx2);width:65px;text-align:right;flex-shrink:0;}
+.fun-bar{height:24px;border-radius:5px;display:flex;align-items:center;padding:0 8px;color:#fff;font-size:9px;font-weight:600;}
+
+/* Calendar */
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin:6px 0;font-size:8px;}
+.cal-h{background:var(--g1);color:#fff;padding:3px;text-align:center;border-radius:3px;font-weight:600;}
+.cal-c{background:var(--bg);border:1px solid var(--bd);padding:4px 3px;text-align:center;border-radius:3px;}
+.cal-c .tag{font-size:7px;padding:1px 3px;border-radius:2px;display:inline-block;margin-top:1px;}
+.t1{background:#FFEBEE;color:#C62828;}.t2{background:#E3F2FD;color:#1565C0;}.t3{background:#F3E5F5;color:#7B1FA2;}.t4{background:#FFF3E0;color:#E65100;}.t5{background:#E8F5E9;color:#2E7D32;}
+
+/* KPI */
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin:8px 0;}
+.kpi{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;text-align:center;}
+.kpi .kn{font-size:18px;font-weight:800;color:var(--g1);}
+.kpi .kl{font-size:9px;color:var(--tx3);margin-top:1px;}
+
+/* Timeline */
+.timeline{display:flex;gap:8px;margin:8px 0;}
+.tl-item{flex:1;border-radius:9px;padding:10px;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd);}
+.tl-item::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.tl-item.p1::before{background:var(--gold);}.tl-item.p2::before{background:var(--g1);}.tl-item.p3::before{background:#1565C0;}
+.tl-item h4{font-size:12px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.tl-item .td{font-size:9px;color:var(--gold-d);font-weight:600;margin-bottom:3px;}
+.tl-item p{font-size:9px;color:var(--tx2);margin:0;line-height:1.45;}
+
+/* Budget */
+.bud-row{display:flex;gap:8px;margin:8px 0;}
+.bud-card{flex:1;border-radius:10px;padding:12px;text-align:center;color:#fff;}
+.bud-card .bn{font-size:22px;font-weight:800;line-height:1;}
+.bud-card .bl{font-size:10px;opacity:.8;margin-top:3px;}
+
+/* Package */
+.pkg-row{display:flex;gap:8px;margin:8px 0;}
+.pkg{flex:1;border:2px solid var(--bd);border-radius:10px;padding:10px;text-align:center;}
+.pkg.featured{border-color:var(--g1);background:var(--ag);}
+.pkg .pe{font-size:20px;margin-bottom:2px;}
+.pkg h4{font-size:13px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.pkg .price{font-size:18px;font-weight:800;color:var(--g1);margin:3px 0;}
+.pkg p{font-size:9.5px;color:var(--tx2);margin:0;line-height:1.4;}
+
+/* Why us */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;}
+.why-card{display:flex;gap:8px;align-items:flex-start;background:var(--bg);border-radius:9px;padding:10px;}
+.why-icon{width:34px;height:34px;border-radius:50%;background:var(--ag);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;}
+.why-text h4{font-size:12px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.why-text p{font-size:9.5px;color:var(--tx2);margin:0;line-height:1.4;}
+
+/* CTA */
+.cta-box{background:linear-gradient(135deg,var(--g3),var(--g1));border-radius:12px;padding:18px;color:#fff;text-align:center;margin:8px 0;}
+.cta-box h3{font-size:18px;margin-bottom:4px;}
+.cta-box p{color:rgba(255,255,255,.8);font-size:11px;margin:0;}
+
+/* SEO compare */
+.seo-col{flex:1;border-radius:10px;padding:10px;border:1.5px solid var(--bd);}
+.seo-col h4{font-size:12px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:4px;}
+.seo-col ul{list-style:none;padding:0;margin:0;}
+.seo-col ul li{font-size:9.5px;color:var(--tx2);padding:2px 0;line-height:1.4;display:flex;align-items:flex-start;gap:3px;}
+.seo-col ul li::before{content:'✓';color:var(--g1);font-weight:700;flex-shrink:0;}
+
+/* Web cards */
+.web-card{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px;text-align:center;}
+.web-card .wi{font-size:20px;margin-bottom:2px;}
+.web-card h4{font-size:10px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.web-card p{font-size:9px;color:var(--tx2);margin:0;line-height:1.3;}
+
+/* SEO flow */
+.sf-box{flex:1;max-width:165px;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:8px 6px;text-align:center;}
+.sf-box .si{font-size:20px;margin-bottom:1px;}
+.sf-box .st{font-size:10px;font-weight:700;color:var(--g3);margin-bottom:1px;}
+.sf-box .sd{font-size:8.5px;color:var(--tx2);line-height:1.3;}
+.sf-arr{display:flex;align-items:center;font-size:16px;color:var(--gold);padding:0 2px;font-weight:700;}
 </style>
 </head>
 <body>
 
-<!-- COVER -->
-<div class="pg cv">
-  <div class="cv-dots"></div>
-  <div class="cv-top">
-    <div class="cv-icon">📣</div>
-    <div class="cv-badge">◆ Solution Proposal ◆</div>
-    <div class="cv-line"></div>
-    <h1>Information Operations<br>for Nong Nooch Garden
-      <span>โซลูชั่น IO — การตลาดดิจิทัลครบวงจรผ่าน Social Media</span>
-    </h1>
-    <div class="cv-line"></div>
-    <div class="cv-desc">
-      กระจายข่าว &bull; กระจายสื่อ &bull; ประชาสัมพันธ์<br>
-      ดึงนักท่องเที่ยวเข้าสวนนงนุชผ่าน Facebook, TikTok, X<br>
-      ด้วยกลยุทธ์ Content Marketing, Influencer และ Paid Media แบบครบวงจร
-    </div>
-    <div class="cv-platforms">
-      <div class="cv-plat" style="background:var(--fb);">f</div>
-      <div class="cv-plat" style="background:var(--tt);">T</div>
-      <div class="cv-plat" style="background:var(--tw);">𝕏</div>
-      <div class="cv-plat" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">IG</div>
-      <div class="cv-plat" style="background:var(--yt);">▶</div>
-      <div class="cv-plat" style="background:var(--line);">L</div>
-    </div>
+<!-- SLIDE 1: COVER -->
+<div class="slide cover">
+  <div class="cv-badge">◆ Presentation ◆</div>
+  <h1>Digital Marketing ครบวงจร</h1>
+  <h2>สวนนงนุช พัทยา — IO + Social Media + SEO/AEO + Paid Ads</h2>
+  <div class="cv-line"></div>
+  <div class="cv-platforms">
+    <div class="cv-plat" style="background:var(--fb);">f</div>
+    <div class="cv-plat" style="background:var(--tt);">T</div>
+    <div class="cv-plat" style="background:var(--tw);">𝕏</div>
+    <div class="cv-plat" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">IG</div>
+    <div class="cv-plat" style="background:var(--yt);">▶</div>
+    <div class="cv-plat" style="background:var(--line);">L</div>
+    <div class="cv-plat" style="background:#4285F4;">G</div>
+    <div class="cv-plat" style="background:#7B1FA2;">AI</div>
   </div>
-  <div class="cv-bot">
-    <div class="cv-meta">
-      <div>
-        <div class="lb">เสนอต่อ</div>
-        <div><strong>สวนนงนุช พัทยา</strong></div>
-        <div>Nong Nooch Tropical Botanical Garden</div>
-        <div style="margin-top:6px" class="lb">เสนอโดย</div>
-        <div><strong>บริษัท คอนเท็นท์ ดิจิตอล มาเก็ตติ้ง จำกัด</strong></div>
-        <div>Content Digital Marketing Co., Ltd.</div>
-      </div>
-      <div style="text-align:right;">
-        <div class="lb">เลขที่เอกสาร</div>
-        <div><strong>PROP-NN-IO-2026</strong></div>
-        <div style="margin-top:6px" class="lb">วันที่</div>
-        <div><strong>กุมภาพันธ์ 2569</strong></div>
-        <div style="margin-top:6px" class="lb">ชั้นความลับ</div>
-        <div><strong>Confidential</strong></div>
-      </div>
-    </div>
+  <div class="cv-desc">กระจายข่าว • กระจายสื่อ • ประชาสัมพันธ์ • เว็บไซต์ SEO/AEO<br>ดึง Gen Z เข้าสวนนงนุชด้วยเครือข่าย IO ครบวงจร + Paid Ads + AI Search Optimization</div>
+  <div class="cv-meta">
+    <div><div class="lb">เสนอต่อ</div><strong>สวนนงนุช พัทยา</strong></div>
+    <div><div class="lb">เสนอโดย</div><strong>Content Digital Marketing Co., Ltd.</strong></div>
+    <div><div class="lb">วันที่</div><strong>กุมภาพันธ์ 2569</strong></div>
   </div>
 </div>
 
-<!-- PAGE 2: Executive Summary + Pain Points -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">2 / 8</div></div>
-
-    <div class="st"><span class="sn">1</span><h2>บทสรุปผู้บริหาร</h2><div class="st-line"></div></div>
-
-    <p>สวนนงนุช พัทยา เป็นสวนพฤกษศาสตร์ระดับโลก พื้นที่ 1,700 ไร่ ติด 1 ใน 10 สวนสวยที่สุดในโลก แต่ในยุคที่นักท่องเที่ยวตัดสินใจจากหน้าฟีดโซเชียลมีเดีย — สถานที่ท่องเที่ยวที่ไม่มีตัวตนบนโลกดิจิทัลอย่างแข็งแกร่ง ย่อมเสียโอกาสให้คู่แข่งที่ทำคอนเทนต์ดีกว่า</p>
-
-    <p><strong>IO (Information Operations)</strong> คือกลยุทธ์การปฏิบัติการข้อมูลข่าวสารครบวงจร — ใช้ Facebook, TikTok, X (Twitter), Instagram, YouTube และ LINE เป็นอาวุธหลักในการกระจายข่าว กระจายสื่อ ประชาสัมพันธ์สวนนงนุชให้เข้าถึงนักท่องเที่ยวทั้งไทยและต่างชาติ อย่างเป็นระบบและวัดผลได้</p>
-
-    <div class="hb gold">
-      <strong>เป้าหมายหลัก:</strong> เพิ่มจำนวนนักท่องเที่ยวเข้าสวนนงนุช 30-50% ภายใน 6 เดือน ผ่านการทำ Content Marketing, Influencer Campaign, Paid Ads และ Community Management แบบครบวงจร
+<!-- SLIDE 2: สวนนงนุช + โอกาส -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">1</span><div class="sl-title">สวนนงนุช — สวนระดับโลก โอกาสมหาศาล</div></div>
+  <div class="sl-body">
+    <div class="stats">
+      <div class="stat"><div class="n">1,700</div><div class="u">ไร่</div></div>
+      <div class="stat"><div class="n">5,000+</div><div class="u">นักท่องเที่ยว/วัน</div></div>
+      <div class="stat"><div class="n">18,000+</div><div class="u">ชนิดพันธุ์ไม้</div></div>
+      <div class="stat"><div class="n">Top 10</div><div class="u">สวนสวยที่สุดในโลก</div></div>
     </div>
-
-    <div class="sr">
-      <div class="sc"><div class="n">1,700</div><div class="u">ไร่ พื้นที่สวน</div></div>
-      <div class="sc"><div class="n">5,000+</div><div class="u">นักท่องเที่ยว/วัน</div></div>
-      <div class="sc"><div class="n">18,000+</div><div class="u">ชนิดพันธุ์ไม้</div></div>
-      <div class="sc"><div class="n">Top 10</div><div class="u">สวนสวยที่สุดในโลก</div></div>
-    </div>
-
-    <div class="st"><span class="sn">2</span><h2>โอกาสและความท้าทาย</h2><div class="st-line"></div></div>
-
-    <table>
-      <tr><th style="width:5%;">#</th><th style="width:22%;">ด้าน</th><th>สถานการณ์ปัจจุบัน</th><th style="width:25%;">โอกาสที่ IO แก้ได้</th></tr>
-      <tr><td>1</td><td>การรับรู้ (Awareness)</td><td>นักท่องเที่ยวรุ่นใหม่ไม่รู้จักสวนนงนุช หรือคิดว่า "เป็นที่เที่ยวของคนรุ่นก่อน" คอนเทนต์ออนไลน์ส่วนใหญ่เป็นรีวิวเก่า</td><td>สร้างภาพลักษณ์ใหม่ ทันสมัย เข้าถึง Gen Z/Millennial</td></tr>
-      <tr><td>2</td><td>คอนเทนต์ (Content)</td><td>มีเรื่องราวมหาศาล (18,000 พันธุ์ไม้, ไดโนเสาร์, โชว์ช้าง, สะพานลอยฟ้า) แต่ยังไม่ถูกเล่าผ่านโซเชียลอย่างมีกลยุทธ์</td><td>เปลี่ยน Asset ที่มีเป็น Viral Content</td></tr>
-      <tr><td>3</td><td>ช่องทาง (Channels)</td><td>ยังไม่ใช้ TikTok และ X อย่างเต็มศักยภาพ Facebook อาจไม่ active พอ ขาด Influencer Network</td><td>ครอบคลุมทุก Platform ที่นักท่องเที่ยวใช้</td></tr>
-      <tr><td>4</td><td>ต่างชาติ (International)</td><td>นักท่องเที่ยวจีน เกาหลี รัสเซีย อินเดีย เป็นกลุ่มใหญ่ แต่คอนเทนต์ภาษาต่างประเทศมีน้อย</td><td>IO หลายภาษา เจาะตลาดต่างชาติ</td></tr>
-    </table>
-
+    <div style="font-size:22px;font-weight:800;color:var(--g3);line-height:1.3;margin:10px 0 6px;">Gen Z ตัดสินใจจาก <span class="accent">TikTok & AI Search</span> ไม่ใช่ Google หน้าแรก</div>
+    <div style="font-size:13px;color:var(--tx2);margin-bottom:10px;">วัยรุ่นยุคนี้ค้นหาสถานที่เที่ยวผ่าน TikTok, IG Reels และถาม ChatGPT/Gemini — สวนนงนุชต้องอยู่ทุกที่ที่พวกเขาอยู่</div>
+    <div class="hl gold"><strong>Digital Marketing ครบวงจร</strong> = IO + Social Media + SEO/AEO + Paid Ads — กระจายผ่าน Social, ครองอันดับ Google, ครอง AI Search และยิง Ads เจาะทุกกลุ่มเป้าหมาย</div>
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 3: Flow Diagrams -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">3 / 9</div></div>
-
-    <div class="st"><span class="sn">3</span><h2>Flow การทำงาน IO</h2><div class="st-line"></div></div>
-
-    <!-- FLOW 1: กระบวนการทำ IO -->
-    <div class="sub">3.1 กระบวนการทำ IO ตั้งแต่ต้นจนจบ</div>
-    <div class="flow-wrap">
-      <div class="flow-row">
-        <div class="flow-box fb1"><div class="flow-icon">📋</div><div class="flow-title">วางแผน</div><div class="flow-desc">วิเคราะห์เทรนด์<br>กำหนด Content Calendar</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fb2"><div class="flow-icon">📸</div><div class="flow-title">ถ่ายทำ / ผลิต</div><div class="flow-desc">ถ่ายภาพ วิดีโอ<br>ออกแบบกราฟิก</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fb3"><div class="flow-icon">✂️</div><div class="flow-title">ตัดต่อ / เขียน</div><div class="flow-desc">ตัดต่อคลิป เขียน Caption<br>ปรับให้เหมาะแต่ละ Platform</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fb4"><div class="flow-icon">📤</div><div class="flow-title">โพสต์ / Boost</div><div class="flow-desc">โพสต์ตามตาราง<br>ยิง Ads เพิ่ม Reach</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fb5"><div class="flow-icon">💬</div><div class="flow-title">ดูแล Community</div><div class="flow-desc">ตอบคอมเมนต์/DM<br>จัดการรีวิว</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fb6"><div class="flow-icon">📊</div><div class="flow-title">วัดผล / ปรับ</div><div class="flow-desc">วิเคราะห์ KPI<br>ปรับกลยุทธ์รอบถัดไป</div></div>
+<!-- SLIDE 3: Target Audience -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">2</span><div class="sl-title">กลุ่มเป้าหมาย — เน้น Gen Z เป็นหลัก</div></div>
+  <div class="sl-body">
+    <!-- Primary -->
+    <div style="background:linear-gradient(135deg,var(--g3),var(--g1));border-radius:12px;padding:12px 14px;color:#fff;position:relative;margin-bottom:10px;">
+      <div style="position:absolute;top:8px;right:10px;background:var(--gold);color:#000;font-size:8px;font-weight:700;padding:2px 8px;border-radius:8px;letter-spacing:1px;">⭐ PRIMARY</div>
+      <div style="font-size:11px;opacity:.7;">กลุ่มเป้าหมายหลัก — สัดส่วนงบ 60%</div>
+      <div style="font-size:18px;font-weight:800;margin:2px 0;">🧑‍💻 Gen Z — อายุ 16-28 ปี</div>
+      <div style="font-size:10px;opacity:.8;margin-bottom:8px;">นักศึกษา, First Jobber, วัยรุ่นสายเที่ยว — พลังซื้อสูง พลังแชร์สูง</div>
+      <div style="display:flex;gap:6px;">
+        <div style="flex:1;background:rgba(255,255,255,.12);border-radius:6px;padding:6px;text-align:center;"><div style="font-size:17px;font-weight:800;">97%</div><div style="font-size:8px;opacity:.75;">ใช้มือถือเป็นหลัก</div></div>
+        <div style="flex:1;background:rgba(255,255,255,.12);border-radius:6px;padding:6px;text-align:center;"><div style="font-size:17px;font-weight:800;">51%</div><div style="font-size:8px;opacity:.75;">ค้นหาผ่าน TikTok</div></div>
+        <div style="flex:1;background:rgba(255,255,255,.12);border-radius:6px;padding:6px;text-align:center;"><div style="font-size:17px;font-weight:800;">65%</div><div style="font-size:8px;opacity:.75;">ใช้ AI วางแผนทริป</div></div>
+        <div style="flex:1;background:rgba(255,255,255,.12);border-radius:6px;padding:6px;text-align:center;"><div style="font-size:17px;font-weight:800;">82%</div><div style="font-size:8px;opacity:.75;">เชื่อ UGC > โฆษณา</div></div>
       </div>
-      <div class="flow-loop">🔄 วนรอบทุกสัปดาห์ — เรียนรู้และปรับปรุงต่อเนื่อง</div>
-    </div>
-
-    <!-- FLOW 2: เส้นทางนักท่องเที่ยว -->
-    <div class="sub" style="margin-top:28px;">3.2 เส้นทางนักท่องเที่ยว (Customer Journey)</div>
-    <div class="flow-wrap">
-      <div class="flow-row">
-        <div class="flow-box fc1"><div class="flow-icon">👀</div><div class="flow-title">เห็นโพสต์</div><div class="flow-desc">เลื่อนฟีด FB/TikTok/IG<br>เจอคอนเทนต์สวนนงนุช</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fc2"><div class="flow-icon">❤️</div><div class="flow-title">สนใจ</div><div class="flow-desc">กดไลค์ เซฟ แชร์<br>เข้าดูเพิ่มในเพจ</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fc3"><div class="flow-icon">🔍</div><div class="flow-title">หาข้อมูล</div><div class="flow-desc">ดูราคา เส้นทาง รีวิว<br>เปรียบเทียบกับที่อื่น</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fc4"><div class="flow-icon">🎫</div><div class="flow-title">ซื้อตั๋ว</div><div class="flow-desc">จองออนไลน์<br>หรือซื้อหน้างาน</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fc5"><div class="flow-icon">🌿</div><div class="flow-title">มาเที่ยว</div><div class="flow-desc">เข้าชมสวนนงนุช<br>ถ่ายรูป ดูโชว์</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fc6"><div class="flow-icon">⭐</div><div class="flow-title">รีวิว / บอกต่อ</div><div class="flow-desc">โพสต์รีวิว แชร์รูป<br>กลายเป็น Content ใหม่</div></div>
+      <div style="margin-top:6px;font-size:9px;display:flex;gap:4px;flex-wrap:wrap;">
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">TikTok</span>
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">IG Reels</span>
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">YouTube Shorts</span>
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">X</span>
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">AI Search</span>
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">สายถ่ายรูป Aesthetic</span>
+        <span style="background:rgba(255,255,255,.18);padding:2px 6px;border-radius:5px;">กลุ่มเพื่อน / คู่รัก</span>
       </div>
-      <div class="flow-loop" style="background:#FFF3E0;border-color:#E65100;color:#E65100;">🔁 UGC จากรีวิว → กลับเป็น Content ให้คนอื่นเห็น → วนซ้ำ!</div>
     </div>
-
-    <!-- FLOW 3: การทำงานรายสัปดาห์ -->
-    <div class="sub" style="margin-top:28px;">3.3 ขั้นตอนการทำงานรายสัปดาห์</div>
-    <div class="flow-wrap">
-      <div class="flow-row">
-        <div class="flow-box fw1"><div class="flow-icon">🗓️</div><div class="flow-title">จันทร์</div><div class="flow-desc">ประชุมทีม Online<br>Review ผลสัปดาห์ก่อน<br>วางแผนสัปดาห์นี้</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fw2"><div class="flow-icon">🎬</div><div class="flow-title">อังคาร-พุธ</div><div class="flow-desc">รับฟุตเทจ/คลิปจากสวน<br>คัดเลือก + ตัดต่อวิดีโอ<br>ออกแบบกราฟิก</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fw3"><div class="flow-icon">✍️</div><div class="flow-title">พฤหัส</div><div class="flow-desc">เขียน Caption ทุกภาษา<br>ปรับคอนเทนต์ให้เหมาะ<br>แต่ละ Platform</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fw4"><div class="flow-icon">🚀</div><div class="flow-title">ศุกร์-อาทิตย์</div><div class="flow-desc">โพสต์ตามตาราง<br>กระจายผ่านเครือข่าย IO<br>ดูแลคอมเมนต์</div></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-box fw5"><div class="flow-icon">📈</div><div class="flow-title">จันทร์ถัดไป</div><div class="flow-desc">สรุปผล<br>ส่ง Weekly Report<br>ปรับแผนสัปดาห์ถัดไป</div></div>
+    <!-- Secondary -->
+    <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Secondary Targets</div>
+    <div style="display:flex;gap:8px;">
+      <div style="flex:1;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px;border-top:3px solid var(--fb);">
+        <div style="font-size:12px;font-weight:700;color:var(--g3);">👨‍👩‍👧‍👦 ครอบครัว <span style="font-size:9px;color:var(--tx3);font-weight:400;">15%</span></div>
+        <div style="font-size:9px;color:var(--tx2);line-height:1.4;margin-top:2px;">30-50 ปี พาลูกเที่ยว<br><strong>ช่อง:</strong> Facebook, YouTube, Google</div>
       </div>
-      <div class="flow-loop" style="background:#E8F5E9;border-color:#2E7D32;color:#2E7D32;">📷 ลงพื้นที่ถ่ายทำเดือนละ 1-2 ครั้ง &nbsp;|&nbsp; 🔄 งานประจำสัปดาห์ทำ Remote ได้ทั้งหมด</div>
+      <div style="flex:1;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px;border-top:3px solid var(--ig);">
+        <div style="font-size:12px;font-weight:700;color:var(--g3);">🌏 ต่างชาติ <span style="font-size:9px;color:var(--tx3);font-weight:400;">15%</span></div>
+        <div style="font-size:9px;color:var(--tx2);line-height:1.4;margin-top:2px;">จีน, เกาหลี, รัสเซีย, ยุโรป<br><strong>ช่อง:</strong> IG, YouTube, Google, OTA</div>
+      </div>
+      <div style="flex:1;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px;border-top:3px solid var(--line);">
+        <div style="font-size:12px;font-weight:700;color:var(--g3);">🚌 กรุ๊ปทัวร์ <span style="font-size:9px;color:var(--tx3);font-weight:400;">5%</span></div>
+        <div style="font-size:9px;color:var(--tx2);line-height:1.4;margin-top:2px;">บริษัททัวร์ + Team Building<br><strong>ช่อง:</strong> LINE OA, Google, Direct</div>
+      </div>
+      <div style="flex:1;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px;border-top:3px solid var(--gold);">
+        <div style="font-size:12px;font-weight:700;color:var(--g3);">📸 คู่รัก/Mill. <span style="font-size:9px;color:var(--tx3);font-weight:400;">5%</span></div>
+        <div style="font-size:9px;color:var(--tx2);line-height:1.4;margin-top:2px;">25-35 ปี เดตทริป, Pre-wed<br><strong>ช่อง:</strong> IG, TikTok, Pinterest</div>
+      </div>
     </div>
-
+    <div class="hl green" style="margin-top:8px;"><strong>สัดส่วนงบปรับได้ตาม Data จริงทุกเดือน</strong> — เริ่มเน้น Gen Z 60% แล้วขยายตามผลลัพธ์</div>
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 4: Platform Strategy -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">4 / 9</div></div>
-
-    <div class="st"><span class="sn">4</span><h2>กลยุทธ์รายแพลตฟอร์ม</h2><div class="st-line"></div></div>
-
-    <p>แต่ละแพลตฟอร์มมีธรรมชาติและกลุ่มผู้ใช้ต่างกัน IO ต้องออกแบบกลยุทธ์เฉพาะทาง ไม่ใช่โพสต์เนื้อหาเดียวกันทุกที่</p>
-
-    <div class="mg">
-      <div class="mc fb">
-        <div class="ic">📘</div>
-        <h4>Facebook</h4>
-        <p><strong>กลุ่มเป้าหมาย:</strong> ครอบครัว, คนทำงาน 25-50 ปี, กรุ๊ปทัวร์<br>
-        <strong>คอนเทนต์:</strong> อัลบั้มภาพสวย, วิดีโอ 1-3 นาที, Event, โปรโมชั่น, รีวิวจริง<br>
-        <strong>กลยุทธ์:</strong> กระจายผ่านเครือข่ายเพจ + กลุ่มท่องเที่ยว/กลุ่มจังหวัด, สร้าง Community Group "คนรักสวนนงนุช", แชร์ UGC<br>
-        <strong>เป้าหมาย:</strong> Reach 500K/เดือน, Engagement Rate 5%+</p>
-      </div>
-      <div class="mc tt">
-        <div class="ic">🎵</div>
-        <h4>TikTok</h4>
-        <p><strong>กลุ่มเป้าหมาย:</strong> Gen Z, วัยรุ่น 16-30 ปี, สายถ่ายรูป<br>
-        <strong>คอนเทนต์:</strong> คลิปสั้น 15-60 วินาที, มุมถ่ายรูปเด็ด, เบื้องหลังโชว์ช้าง, ไดโนเสาร์เต้น, Transition สวยๆ ระหว่างโซน<br>
-        <strong>กลยุทธ์:</strong> ใช้เพลงฮิต/เทรนด์, Hashtag Challenge #สวนนงนุช, TikTok Creator collab<br>
-        <strong>เป้าหมาย:</strong> 3+ คลิปไวรัล/เดือน, Follower 100K ใน 6 เดือน</p>
-      </div>
-      <div class="mc tw">
-        <div class="ic">𝕏</div>
-        <h4>X (Twitter)</h4>
-        <p><strong>กลุ่มเป้าหมาย:</strong> คนไทยสาย Pop Culture, นักเดินทาง, สื่อมวลชน<br>
-        <strong>คอนเทนต์:</strong> Thread เรื่องเล่าพันธุ์ไม้หายาก, Fun Fact ไดโนเสาร์, มีม, ตอบรีวิว, Real-time Event<br>
-        <strong>กลยุทธ์:</strong> Newsjacking (เกาะกระแส), สร้าง Brand Voice ที่มีเอกลักษณ์ ตลก เข้าถึงง่าย<br>
-        <strong>เป้าหมาย:</strong> Trending 2+ ครั้ง/เดือน, Brand Mention เพิ่ม 200%</p>
-      </div>
-      <div class="mc ig">
-        <div class="ic">📸</div>
-        <h4>Instagram</h4>
-        <p><strong>กลุ่มเป้าหมาย:</strong> สายถ่ายรูป, คู่รัก, นักท่องเที่ยวต่างชาติ<br>
-        <strong>คอนเทนต์:</strong> ภาพ High-quality สวนสวย, Reels เดินชมสวน, Story Behind-the-scenes, UGC repost<br>
-        <strong>กลยุทธ์:</strong> Aesthetic Feed, Geotag campaign, Collab กับ Travel Photographer<br>
-        <strong>เป้าหมาย:</strong> Follower 50K, Save Rate 8%+</p>
-      </div>
-      <div class="mc yt">
-        <div class="ic">▶️</div>
-        <h4>YouTube</h4>
-        <p><strong>กลุ่มเป้าหมาย:</strong> ครอบครัว, นักท่องเที่ยวต่างชาติ, คนวางแผนทริป<br>
-        <strong>คอนเทนต์:</strong> Vlog เดินสวนทั้งวัน, สารคดีสั้น "เบื้องหลังสวนนงนุช", Guide "มาเที่ยวยังไง ไปยังไง"<br>
-        <strong>กลยุทธ์:</strong> SEO-optimized, YouTube Shorts, Collab กับ Travel YouTuber ไทย + ต่างชาติ<br>
-        <strong>เป้าหมาย:</strong> 100K views/วิดีโอ, ติด Search "ที่เที่ยวพัทยา"</p>
-      </div>
-      <div class="mc ln">
-        <div class="ic">💚</div>
-        <h4>LINE OA</h4>
-        <p><strong>กลุ่มเป้าหมาย:</strong> คนที่สนใจแล้ว, ลูกค้าเก่า, กรุ๊ปทัวร์<br>
-        <strong>คอนเทนต์:</strong> โปรโมชั่นพิเศษ, แจ้ง Event, คูปองส่วนลด, Rich Menu จองตั๋ว<br>
-        <strong>กลยุทธ์:</strong> Segmented broadcast, Chatbot ตอบคำถาม, CRM ติดตาม<br>
-        <strong>เป้าหมาย:</strong> Friends 200K, CTR 15%+</p>
-      </div>
+<!-- SLIDE 4: Flow กระบวนการ -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">3</span><div class="sl-title">กระบวนการทำงานครบวงจร — IO + Ads + SEO/AEO</div></div>
+  <div class="sl-body">
+    <div class="flow">
+      <div class="flow-box" style="border-top:3px solid #1565C0;"><div class="fi">📋</div><div class="ft">วางแผน</div><div class="fd">วิเคราะห์เทรนด์ Gen Z<br>กำหนด Content Calendar</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid #7B1FA2;"><div class="fi">🎬</div><div class="ft">ผลิตคอนเทนต์</div><div class="fd">รับฟุตเทจจากสวน<br>ตัดต่อแนว Gen Z ชอบ</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid #E65100;"><div class="fi">✍️</div><div class="ft">เขียน / ปรับ</div><div class="fd">Caption + Blog<br>ปรับให้เหมาะ SEO/AEO</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid var(--g1);"><div class="fi">📤</div><div class="ft">โพสต์ / กระจาย</div><div class="fd">โพสต์ตามตาราง<br>กระจายเครือข่าย IO</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid var(--gold);"><div class="fi">💬</div><div class="ft">ดูแล Community</div><div class="fd">ตอบคอมเมนต์/DM<br>สร้าง UGC จาก Gen Z</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid var(--fb);"><div class="fi">📊</div><div class="ft">วัดผล / ปรับ</div><div class="fd">วิเคราะห์ KPI<br>ปรับกลยุทธ์รอบถัดไป</div></div>
     </div>
+    <div class="flow-note" style="background:#E3F2FD;border:1px dashed #1565C0;color:#1565C0;">🔄 วนรอบทุกสัปดาห์ — เรียนรู้และปรับปรุงต่อเนื่อง</div>
 
+    <div style="font-size:13px;font-weight:700;color:var(--g3);margin:12px 0 5px;">เส้นทาง Gen Z (Customer Journey)</div>
+    <div class="flow">
+      <div class="flow-box" style="border-top:3px solid var(--fb);"><div class="fi">👀</div><div class="ft">เห็นโพสต์</div><div class="fd">FYP / Reels<br>หรือถาม AI</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid var(--ig);"><div class="fi">❤️</div><div class="ft">สนใจ</div><div class="fd">กดไลค์ เซฟ แชร์<br>เข้าดูเพจ/เว็บ</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid var(--gold);"><div class="fi">🔍</div><div class="ft">หาข้อมูล</div><div class="fd">ดูราคา รีวิว<br>Google / AI Search</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid var(--g1);"><div class="fi">🎫</div><div class="ft">ซื้อตั๋ว</div><div class="fd">จองออนไลน์<br>จ่ายผ่าน Mobile</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid #1565C0;"><div class="fi">🌿</div><div class="ft">มาเที่ยว</div><div class="fd">เข้าชมสวน<br>ถ่ายคลิป TikTok</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-top:3px solid #E65100;"><div class="fi">⭐</div><div class="ft">โพสต์ UGC</div><div class="fd">รีวิว TikTok/IG<br>→ คนอื่นเห็น!</div></div>
+    </div>
+    <div class="flow-note" style="background:#FFF3E0;border:1px dashed #E65100;color:#E65100;">🔁 UGC จาก Gen Z → กลับเป็น Content + ป้อน AI Search → วนซ้ำ!</div>
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 4: Content Strategy -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">5 / 9</div></div>
+<!-- SLIDE 5: ขั้นตอนรายสัปดาห์ -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">4</span><div class="sl-title">ขั้นตอนการทำงานรายสัปดาห์</div></div>
+  <div class="sl-body" style="display:flex;flex-direction:column;justify-content:center;">
+    <div class="flow">
+      <div class="flow-box" style="max-width:155px;border-top:3px solid #1565C0;"><div class="fi">🗓️</div><div class="ft">จันทร์</div><div class="fd">ประชุมทีม Online<br>Review ผลสัปดาห์ก่อน<br>วางแผนสัปดาห์นี้</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="max-width:155px;border-top:3px solid var(--g1);"><div class="fi">🎬</div><div class="ft">อังคาร-พุธ</div><div class="fd">รับฟุตเทจ/คลิปจากสวน<br>คัดเลือก + ตัดต่อ<br>เขียน Blog SEO/AEO</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="max-width:155px;border-top:3px solid #7B1FA2;"><div class="fi">✍️</div><div class="ft">พฤหัส</div><div class="fd">เขียน Caption ทุกภาษา<br>ปรับคอนเทนต์ Gen Z<br>อัพเดตเว็บ + Schema</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="max-width:155px;border-top:3px solid var(--fb);"><div class="fi">🚀</div><div class="ft">ศุกร์-อาทิตย์</div><div class="fd">โพสต์ตามตาราง<br>กระจายเครือข่าย IO<br>ดูแลคอมเมนต์ + Ads</div></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="max-width:155px;border-top:3px solid var(--gold);"><div class="fi">📈</div><div class="ft">จันทร์ถัดไป</div><div class="fd">สรุปผล Social + SEO<br>ส่ง Weekly Report<br>ปรับแผนสัปดาห์ถัดไป</div></div>
+    </div>
+    <div class="flow-note" style="background:#E8F5E9;border:1px dashed #2E7D32;color:#2E7D32;margin-top:10px;">📷 ลงพื้นที่ถ่ายทำเดือนละ 1-2 ครั้ง &nbsp;|&nbsp; 🔄 งานประจำสัปดาห์ทำ Remote ได้ทั้งหมด</div>
+    <div class="hl gold" style="margin-top:14px;">
+      <strong>เป้าหมายหลัก:</strong> เพิ่มการรับรู้สวนนงนุชในกลุ่ม Gen Z และเพิ่มยอดตั๋ว Online <span class="gold-accent">+15%</span> ภายใน 6 เดือน
+    </div>
+  </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
+</div>
 
-    <div class="st"><span class="sn">5</span><h2>กลยุทธ์คอนเทนต์ (Content Pillars)</h2><div class="st-line"></div></div>
+<!-- SLIDE 6: กลยุทธ์รายแพลตฟอร์ม -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">5</span><div class="sl-title">กลยุทธ์รายแพลตฟอร์ม — เน้น Gen Z</div></div>
+  <div class="sl-body">
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:6px;">แต่ละแพลตฟอร์มมีธรรมชาติต่างกัน — ออกแบบคอนเทนต์เฉพาะทาง เน้นช่องทางที่ Gen Z ใช้จริง</div>
+    <div class="plat-grid">
+      <div class="plat-card tt"><div class="pi">🎵</div><h4>TikTok ⭐ หลัก</h4><p><strong>กลุ่ม:</strong> Gen Z 16-28 ปี<br><strong>คอนเทนต์:</strong> คลิปสั้น 15-60 วิ, POV, Challenge<br><strong>IO:</strong> หลายบัญชี Duet/Stitch ดัน FYP</p></div>
+      <div class="plat-card ig"><div class="pi">📸</div><h4>Instagram ⭐ หลัก</h4><p><strong>กลุ่ม:</strong> Gen Z สายถ่ายรูป, คู่รัก<br><strong>คอนเทนต์:</strong> Reels, Photo Dump, Story<br><strong>IO:</strong> Repost ข้ามบัญชี ดัน Explore</p></div>
+      <div class="plat-card yt"><div class="pi">▶️</div><h4>YouTube Shorts</h4><p><strong>กลุ่ม:</strong> Gen Z + ต่างชาติวางแผนทริป<br><strong>คอนเทนต์:</strong> Shorts, Vlog, Guide<br><strong>IO:</strong> Shorts หลายช่อง, Cross-channel</p></div>
+      <div class="plat-card tw"><div class="pi">𝕏</div><h4>X (Twitter)</h4><p><strong>กลุ่ม:</strong> Gen Z Pop Culture, มีมเมอร์<br><strong>คอนเทนต์:</strong> Thread, มีม, Fun Fact<br><strong>IO:</strong> RT จากหลายบัญชี ดัน Trending</p></div>
+      <div class="plat-card fb"><div class="pi">📘</div><h4>Facebook</h4><p><strong>กลุ่ม:</strong> ครอบครัว + Gen Z กลุ่มท่องเที่ยว<br><strong>คอนเทนต์:</strong> Reels, อัลบั้มภาพ, Event<br><strong>IO:</strong> กระจายผ่านเครือข่ายเพจ</p></div>
+      <div class="plat-card ln"><div class="pi">💚</div><h4>LINE OA</h4><p><strong>กลุ่ม:</strong> Gen Z ซื้อตั๋ว, กรุ๊ปทัวร์<br><strong>คอนเทนต์:</strong> โปรโมชั่น, คูปอง, Flash Sale<br><strong>IO:</strong> กระจายผ่าน LINE กลุ่มวัยรุ่น</p></div>
+    </div>
+  </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
+</div>
 
-    <p>เนื้อหาทั้งหมดแบ่งเป็น 5 เสาหลัก (Content Pillars) หมุนเวียนตลอดสัปดาห์ เพื่อให้ฟีดมีความหลากหลายและน่าติดตาม</p>
+<!-- SLIDE 7: Content Pillars + Calendar -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">6</span><div class="sl-title">Content Pillars + ปฏิทินคอนเทนต์</div></div>
+  <div class="sl-body">
+    <div class="pillar-row">
+      <div class="pillar" style="background:var(--g1);"><div class="pe">🌿</div><h4>Nature & Knowledge</h4><p>ความรู้ธรรมชาติ<br>พันธุ์ไม้ สัตว์ สารคดี</p></div>
+      <div class="pillar" style="background:#1565C0;"><div class="pe">📸</div><h4>Visual Wonder</h4><p>มุมถ่ายรูปเด็ด<br>Drone, Golden Hour</p></div>
+      <div class="pillar" style="background:#E65100;"><div class="pe">😂</div><h4>Fun & Viral</h4><p>ลูกช้าง มีม เทรนด์<br>Behind-the-scenes</p></div>
+      <div class="pillar" style="background:#7B1FA2;"><div class="pe">🎉</div><h4>Event & Promo</h4><p>โชว์พิเศษ เทศกาล<br>ส่วนลด Flash Sale</p></div>
+      <div class="pillar" style="background:var(--gold-d);"><div class="pe">💬</div><h4>Social Proof</h4><p>รีวิวจริง UGC<br>Gen Z content</p></div>
+    </div>
 
-    <table>
-      <tr><th style="width:5%;">#</th><th style="width:18%;">Pillar</th><th style="width:32%;">ตัวอย่างคอนเทนต์</th><th style="width:18%;">แพลตฟอร์มหลัก</th><th>ความถี่</th></tr>
-      <tr><td style="text-align:center;">🌿</td><td><strong>Nature & Knowledge</strong><br>ความรู้ธรรมชาติ</td><td>"รู้ไหม? ปาล์ม Coco de Mer มีเมล็ดหนัก 25 กก.", "10 ต้นไม้หายากที่มีแค่ที่นงนุช", Thread สารคดีพันธุ์ไม้</td><td>X, Facebook, YouTube</td><td>3 ครั้ง/สัปดาห์</td></tr>
-      <tr><td style="text-align:center;">📸</td><td><strong>Visual Wonder</strong><br>ความสวยงาม</td><td>มุมถ่ายรูปเด็ด, Drone shot สวนฝรั่งเศส, Golden Hour ที่สะพานลอยฟ้า, Reels เดินชมสวน</td><td>Instagram, TikTok</td><td>4 ครั้ง/สัปดาห์</td></tr>
-      <tr><td style="text-align:center;">😂</td><td><strong>Fun & Viral</strong><br>สนุก ไวรัล</td><td>ลูกช้างขี้อ้อน, ไดโนเสาร์กับเด็ก, มีม, Trend TikTok, Behind-the-scenes ตลก</td><td>TikTok, X, Facebook</td><td>3 ครั้ง/สัปดาห์</td></tr>
-      <tr><td style="text-align:center;">🎉</td><td><strong>Event & Promo</strong><br>อีเวนต์ โปรโมชั่น</td><td>โชว์พิเศษ, ช่วงดอกไม้บาน, เทศกาล, ส่วนลดวันธรรมดา, Flash Sale</td><td>Facebook, LINE, IG</td><td>2 ครั้ง/สัปดาห์</td></tr>
-      <tr><td style="text-align:center;">💬</td><td><strong>Social Proof</strong><br>รีวิว/เสียงจริง</td><td>Repost รีวิวนักท่องเที่ยว, UGC, Influencer content, Google Review highlights</td><td>IG, Facebook, TikTok</td><td>2 ครั้ง/สัปดาห์</td></tr>
-    </table>
-
-    <div class="sub">4.1 ปฏิทินคอนเทนต์ (ตัวอย่าง 1 สัปดาห์)</div>
-    <div class="content-cal">
+    <div style="font-size:12px;font-weight:700;color:var(--g3);margin:10px 0 4px;">ตัวอย่างปฏิทิน 1 สัปดาห์ (14+ ชิ้น ทุกแพลตฟอร์ม)</div>
+    <div class="cal">
       <div class="cal-h">จันทร์</div><div class="cal-h">อังคาร</div><div class="cal-h">พุธ</div><div class="cal-h">พฤหัส</div><div class="cal-h">ศุกร์</div><div class="cal-h">เสาร์</div><div class="cal-h">อาทิตย์</div>
-      <div class="cal-c">🌿 Thread ต้นไม้<br><span class="ct-type ct-inf">X / FB</span></div>
-      <div class="cal-c">📸 Reels มุมสวย<br><span class="ct-type ct-pho">IG / TT</span></div>
-      <div class="cal-c">😂 ลูกช้าง Clip<br><span class="ct-type ct-vid">TT / FB</span></div>
-      <div class="cal-c">🌿 Fun Fact<br><span class="ct-type ct-inf">X / IG</span></div>
-      <div class="cal-c">🎉 Weekend Promo<br><span class="ct-type ct-liv">FB / LINE</span></div>
-      <div class="cal-c">📸 Drone Shot<br><span class="ct-type ct-pho">IG / YT</span></div>
-      <div class="cal-c">💬 UGC Repost<br><span class="ct-type ct-sto">IG / FB</span></div>
+      <div class="cal-c">🌿 Thread<br><span class="tag t5">X / FB</span></div>
+      <div class="cal-c">📸 Reels<br><span class="tag t2">IG / TT</span></div>
+      <div class="cal-c">😂 ช้าง Clip<br><span class="tag t1">TT / FB</span></div>
+      <div class="cal-c">🌿 Blog SEO<br><span class="tag t5">Web / X</span></div>
+      <div class="cal-c">🎉 Promo<br><span class="tag t4">FB / LINE</span></div>
+      <div class="cal-c">📸 Drone<br><span class="tag t2">IG / YT</span></div>
+      <div class="cal-c">💬 UGC<br><span class="tag t3">IG / FB</span></div>
     </div>
-
-    <div class="sub">4.2 Influencer & KOL Strategy</div>
-    <table>
-      <tr><th>ระดับ</th><th>Follower</th><th>จำนวน/เดือน</th><th>รูปแบบ</th><th>งบ/คน</th></tr>
-      <tr><td>Mega Influencer</td><td>1M+</td><td>1 คน</td><td>Vlog ครึ่งวัน + 3 โพสต์</td><td>80,000 - 200,000</td></tr>
-      <tr><td>Macro Influencer</td><td>100K-1M</td><td>3 คน</td><td>Reels/TikTok 2-3 คลิป</td><td>20,000 - 50,000</td></tr>
-      <tr><td>Micro Influencer</td><td>10K-100K</td><td>10 คน</td><td>แลกบัตรเข้าชม + รีวิว</td><td>ฟรี (แลกตั๋ว)</td></tr>
-      <tr><td>ต่างชาติ (จีน/เกาหลี/รัสเซีย)</td><td>50K+</td><td>2 คน</td><td>คอนเทนต์ภาษาต้นทาง</td><td>30,000 - 80,000</td></tr>
-    </table>
-
-    <div class="hb">
-      <strong>กลยุทธ์ Micro Influencer:</strong> เชิญ 10 คน/เดือน มาเที่ยวฟรี แลกรีวิวจริง — ต้นทุนต่ำ (แค่ค่าตั๋ว) แต่ได้คอนเทนต์หลากมุม + Social Proof จำนวนมาก
+    <div class="hl green">
+      <strong>* Influencer Marketing:</strong> สามารถเพิ่มบริการประสานงาน Influencer ได้ในอนาคต — แยกเสนอราคาต่างหาก
     </div>
-
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 5: Paid Media + IO Tactics -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">5 / 8</div></div>
+<!-- SLIDE 8: IO Distribution -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">7</span><div class="sl-title">IO Distribution — เครือข่ายกระจายคอนเทนต์</div></div>
+  <div class="sl-body">
+    <div style="font-size:20px;font-weight:800;color:var(--g3);margin-bottom:3px;">IO Organic + <span class="accent">Paid Ads</span> = พลังคูณ</div>
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:8px;">เครือข่าย IO กระจาย Organic ให้ดูเป็นธรรมชาติ + ยิง Ads เสริมเจาะกลุ่มเป้าหมายแม่นยำ</div>
 
-    <div class="st"><span class="sn">5</span><h2>IO Distribution & Tactics</h2><div class="st-line"></div></div>
-
-    <div class="sub">5.1 IO Distribution — กระจายผ่านเครือข่ายที่มี</div>
-    <p>ไม่จำเป็นต้องยิง Ads — ใช้เครือข่าย IO ที่มีอยู่แล้วในการกระจายคอนเทนต์ให้เข้าถึงกลุ่มเป้าหมายแบบ Organic ซึ่งมีข้อดีคือ ดูเป็นธรรมชาติ น่าเชื่อถือกว่าโฆษณา และต้นทุนต่ำกว่ามาก</p>
-
-    <table>
-      <tr><th>ช่องทาง IO</th><th>วิธีกระจาย</th><th>ผลลัพธ์ที่คาดหวัง</th></tr>
-      <tr><td>เครือข่ายเพจ Facebook</td><td>แชร์คอนเทนต์ผ่านเพจในเครือข่าย, กลุ่มท่องเที่ยว, กลุ่มรีวิว, กลุ่มจังหวัด</td><td>Reach 300K-500K/เดือน</td></tr>
-      <tr><td>เครือข่ายบัญชี TikTok</td><td>โพสต์ผ่านหลายบัญชี, Duet/Stitch กันเอง, ดัน Algorithm ให้ขึ้น FYP</td><td>3+ คลิปไวรัล/เดือน</td></tr>
-      <tr><td>เครือข่ายบัญชี X</td><td>Thread + RT จากหลายบัญชี, สร้างกระแสให้ขึ้น Trending</td><td>Trending 2+ ครั้ง/เดือน</td></tr>
-      <tr><td>เครือข่าย IG</td><td>Repost, Tag, Story Share ข้ามบัญชี ดันให้ขึ้น Explore</td><td>Explore Reach 100K+</td></tr>
-      <tr><td>เครือข่าย YouTube</td><td>Shorts หลายช่อง, Collab cross-channel</td><td>100K views/วิดีโอ</td></tr>
-      <tr><td>LINE กลุ่ม/OA</td><td>กระจายผ่าน LINE กลุ่มท่องเที่ยว, Forward chain</td><td>เข้าถึงกลุ่มครอบครัว/ผู้ใหญ่</td></tr>
-    </table>
-
-    <div class="hb gold">
-      <strong>จุดแข็ง IO ของเรา:</strong> มีเครือข่ายบัญชีและเพจพร้อมใช้งาน สามารถกระจายคอนเทนต์ได้ทันทีโดยไม่ต้องใช้งบ Ads — เข้าถึงกว้าง ดูเป็นธรรมชาติ สร้างกระแสได้เร็ว
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;gap:6px;margin:6px 0;">
+      <div class="io-card"><div class="ii">🎵</div><h4>TikTok</h4><p>หลายบัญชี<br>Duet/Stitch ดัน FYP</p></div>
+      <div class="io-card"><div class="ii">📸</div><h4>Instagram</h4><p>Repost / Tag<br>ดันขึ้น Explore</p></div>
+      <div class="io-card"><div class="ii">📘</div><h4>Facebook</h4><p>แชร์ผ่านเครือข่ายเพจ<br>กลุ่มท่องเที่ยว</p></div>
+      <div class="io-card"><div class="ii">𝕏</div><h4>X</h4><p>Thread + RT<br>ดัน Trending</p></div>
+      <div class="io-card"><div class="ii">▶️</div><h4>YouTube</h4><p>Shorts หลายช่อง<br>Cross-channel</p></div>
+      <div class="io-card"><div class="ii">💚</div><h4>LINE</h4><p>กระจายผ่าน<br>กลุ่มท่องเที่ยว</p></div>
     </div>
 
-    <div class="sub">5.2 IO Tactics — ปฏิบัติการข้อมูลข่าวสาร</div>
-    <table>
-      <tr><th style="width:25%;">Tactic</th><th>รายละเอียด</th><th style="width:25%;">ผลลัพธ์ที่คาดหวัง</th></tr>
-      <tr><td>🔥 Newsjacking</td><td>เกาะกระแสข่าว/เทรนด์ปัจจุบัน เชื่อมโยงกับสวนนงนุช เช่น หน้าร้อน → "หนีร้อนมาเย็นในสวน 1,700 ไร่", ข่าวไดโนเสาร์ → โยงหุบเขาไดโนเสาร์</td><td>Trending + Viral reach</td></tr>
-      <tr><td>📰 PR & Media Relations</td><td>ส่งข่าวประชาสัมพันธ์ให้สื่อ: สำนักข่าวออนไลน์, บล็อกเกอร์ท่องเที่ยว, นิตยสาร, รายการทีวี</td><td>Earned media 5+ ชิ้น/เดือน</td></tr>
-      <tr><td>🌐 Multi-language Content</td><td>คอนเทนต์ภาษาจีน (Weibo/RED), เกาหลี, อังกฤษ, รัสเซีย — เจาะกลุ่มนักท่องเที่ยวต่างชาติโดยเฉพาะ</td><td>เพิ่มนักท่องเที่ยวต่างชาติ 20%</td></tr>
-      <tr><td>🤝 Partnership Content</td><td>ร่วมกับ OTA (Klook/KKday/Traveloka), โรงแรมในพัทยา, สายการบิน — Cross-promote</td><td>เพิ่มช่องทางจำหน่ายตั๋ว</td></tr>
-      <tr><td>🎮 Hashtag Challenge</td><td>สร้าง Challenge บน TikTok เช่น #นงนุชChallenge — ถ่ายคลิป Transition เข้าสวน ชิงรางวัล</td><td>UGC 500+ คลิป/เดือน</td></tr>
-      <tr><td>💬 Community Management</td><td>ตอบคอมเมนต์/DM ทุกแพลตฟอร์มภายใน 30 นาที, จัดการ Negative review เชิงรุก</td><td>Response Rate 95%+</td></tr>
-    </table>
-
-    <div class="sub">5.3 Conversion Funnel</div>
-    <div class="funnel">
-      <div class="funnel-step">
-        <div class="funnel-label">Awareness</div>
-        <div class="funnel-bar" style="width:100%;background:var(--fb);">Reach & Impressions — เห็นคอนเทนต์ผ่านเครือข่าย IO (500K+ คน/เดือน)</div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-label">Interest</div>
-        <div class="funnel-bar" style="width:80%;background:var(--ig);">Engagement — กดไลค์ คอมเมนต์ แชร์ เซฟ (50K+ interactions)</div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-label">Consideration</div>
-        <div class="funnel-bar" style="width:55%;background:var(--gold);">Website Visit — เข้าดูราคา/แผนที่/รีวิว (15K+ visits)</div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-label">Conversion</div>
-        <div class="funnel-bar" style="width:35%;background:var(--g1);">ซื้อตั๋ว / มาเที่ยวจริง (3,000+ คน/เดือน จาก Online)</div>
-      </div>
-      <div class="funnel-step">
-        <div class="funnel-label">Advocacy</div>
-        <div class="funnel-bar" style="width:20%;background:var(--g3);">รีวิว / แชร์ / แนะนำ → วนกลับเป็น Awareness ให้คนอื่น</div>
-      </div>
+    <div style="font-size:12px;font-weight:700;color:var(--g3);margin:8px 0 4px;">Conversion Funnel (Gen Z)</div>
+    <div style="display:flex;flex-direction:column;gap:3px;">
+      <div class="fun-step"><div class="fun-label">Awareness</div><div class="fun-bar" style="width:100%;background:var(--fb);">IO + Ads + AI Search = เห็นคอนเทนต์ (500K+ /เดือน)</div></div>
+      <div class="fun-step"><div class="fun-label">Interest</div><div class="fun-bar" style="width:80%;background:var(--ig);">Engagement — ไลค์ เซฟ แชร์ คอมเมนต์ (50K+)</div></div>
+      <div class="fun-step"><div class="fun-label">Consider</div><div class="fun-bar" style="width:55%;background:var(--gold);">เข้าเว็บ / ดูราคา / รีวิว (15K+)</div></div>
+      <div class="fun-step"><div class="fun-label">Convert</div><div class="fun-bar" style="width:35%;background:var(--g1);">ซื้อตั๋ว / มาเที่ยวจริง (3,000+)</div></div>
+      <div class="fun-step"><div class="fun-label">Advocate</div><div class="fun-bar" style="width:20%;background:var(--g3);">โพสต์ UGC → วนกลับ</div></div>
     </div>
-
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 6: Analytics & Measurement -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">6 / 8</div></div>
+<!-- SLIDE 9: Paid Ads -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">8</span><div class="sl-title">Paid Ads — ยิงแอดเจาะ Gen Z แม่นยำ</div></div>
+  <div class="sl-body">
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:8px;">IO สร้าง Organic Reach + Paid Ads เจาะ Gen Z ด้วย Data จริง = <strong class="accent">ผลลัพธ์ทวีคูณ</strong></div>
 
-    <div class="st"><span class="sn">6</span><h2>การวัดผลและ KPI</h2><div class="st-line"></div></div>
-
-    <div class="sub">6.1 KPI Dashboard รายเดือน</div>
-    <table>
-      <tr><th>หมวด</th><th>KPI</th><th>เป้าหมายเดือนที่ 1-3</th><th>เป้าหมายเดือนที่ 4-6</th></tr>
-      <tr><td rowspan="2">Reach</td><td>Total Reach (ทุกแพลตฟอร์ม)</td><td>300,000</td><td>800,000</td></tr>
-      <tr><td>Video Views</td><td>200,000</td><td>1,000,000</td></tr>
-      <tr><td rowspan="2">Engagement</td><td>Engagement Rate เฉลี่ย</td><td>4%</td><td>6%</td></tr>
-      <tr><td>Comments + Shares</td><td>3,000</td><td>10,000</td></tr>
-      <tr><td rowspan="2">Growth</td><td>Follower เพิ่ม (ทุก Platform)</td><td>+20,000</td><td>+80,000</td></tr>
-      <tr><td>LINE OA Friends เพิ่ม</td><td>+10,000</td><td>+30,000</td></tr>
-      <tr><td rowspan="2">Conversion</td><td>Website Traffic จาก Social</td><td>5,000/เดือน</td><td>15,000/เดือน</td></tr>
-      <tr><td>ตั๋วขายผ่าน Online เพิ่ม</td><td>+15%</td><td>+40%</td></tr>
-      <tr><td>Brand</td><td>Brand Mentions (Social Listening)</td><td>+100%</td><td>+300%</td></tr>
-    </table>
-
-    <div class="sub">6.2 Reporting</div>
-    <div class="mg">
-      <div class="mc">
-        <div class="ic">📊</div>
-        <h4>Weekly Report</h4>
-        <p>ทุกวันจันทร์ — สรุปตัวเลขสัปดาห์ก่อน: Reach, Engagement, Top Post, คอมเมนต์เด่น, ปัญหาที่ต้องแก้</p>
+    <div style="display:flex;gap:10px;margin:8px 0;">
+      <div style="flex:1;border:1.5px solid var(--bd);border-radius:10px;padding:12px;border-top:4px solid var(--tt);">
+        <div style="display:flex;align-items:center;gap:5px;margin-bottom:5px;"><span style="font-size:18px;">🎵</span><h4 style="font-size:13px;font-weight:700;color:var(--g3);margin:0;">TikTok Ads ⭐</h4></div>
+        <p style="font-size:10px;color:var(--tx2);line-height:1.5;margin:0;">
+          <strong>รูปแบบ:</strong> In-Feed, Spark Ads (ดัน IO Post)<br>
+          <strong>กลุ่ม:</strong> Gen Z 16-28 ปี สนใจท่องเที่ยว<br>
+          <strong>เป้า:</strong> Video View + Profile Visit + Traffic<br>
+          <strong>จุดเด่น:</strong> เข้าถึง Gen Z ตรงสุด CPV ถูก
+        </p>
       </div>
-      <div class="mc gl">
-        <div class="ic">📈</div>
-        <h4>Monthly Report</h4>
-        <p>สรุปรายเดือน — KPI vs เป้าหมาย, ROI แต่ละแพลตฟอร์ม, Insight + แผนปรับกลยุทธ์เดือนถัดไป</p>
+      <div style="flex:1;border:1.5px solid var(--bd);border-radius:10px;padding:12px;border-top:4px solid #4285F4;">
+        <div style="display:flex;align-items:center;gap:5px;margin-bottom:5px;"><span style="font-size:18px;">🔍</span><h4 style="font-size:13px;font-weight:700;color:var(--g3);margin:0;">Google Ads</h4></div>
+        <p style="font-size:10px;color:var(--tx2);line-height:1.5;margin:0;">
+          <strong>รูปแบบ:</strong> Search + Display + Google Maps<br>
+          <strong>กลุ่ม:</strong> คนค้นหา "ที่เที่ยวพัทยา" "สวนนงนุช"<br>
+          <strong>เป้า:</strong> จอง/ซื้อตั๋วตรง — จับ Intent สูง<br>
+          <strong>จุดเด่น:</strong> เจอคนพร้อมซื้อ CVR สูง
+        </p>
       </div>
-    </div>
-
-    <div class="st"><span class="sn">7</span><h2>แผนดำเนินงาน</h2><div class="st-line"></div></div>
-
-    <div class="tl">
-      <div class="ti ac">
-        <h4>Phase 1 — Setup & Launch (เดือนที่ 1)</h4>
-        <div class="dur">⏱ 1 เดือน | วางรากฐาน</div>
-        <p>✅ Audit ทุก Social Account ปัจจุบัน + คู่แข่ง<br>
-        ✅ สร้าง/ปรับปรุง Account ทุกแพลตฟอร์ม (Bio, Cover, Highlight)<br>
-        ✅ ออกแบบ Content Pillar + Visual Identity (สี, ฟอนต์, Template)<br>
-        ✅ วาง Content Calendar 3 เดือน<br>
-        ✅ เริ่มโพสต์ 14 ชิ้น/สัปดาห์ ทุกแพลตฟอร์ม<br>
-        ✅ Setup เครือข่าย IO + Analytics Tracking</p>
-      </div>
-      <div class="ti">
-        <h4>Phase 2 — Scale & Engage (เดือนที่ 2-3)</h4>
-        <div class="dur">⏱ 2 เดือน | เร่งเครื่อง</div>
-        <p>✅ Influencer Campaign ชุดแรก (5 Micro + 2 Macro)<br>
-        ✅ TikTok Hashtag Challenge<br>
-        ✅ IO กระจายเต็มเครือข่ายทุกแพลตฟอร์ม<br>
-        ✅ PR ส่งข่าวสื่อออนไลน์ 10 สำนัก<br>
-        ✅ Community Management 7 วัน/สัปดาห์</p>
-      </div>
-      <div class="ti">
-        <h4>Phase 3 — Optimize & International (เดือนที่ 4-6)</h4>
-        <div class="dur">⏱ 3 เดือน | ปรับจูน + เจาะต่างชาติ</div>
-        <p>✅ วิเคราะห์ Data → ปรับ Content ที่ไม่ work ออก<br>
-        ✅ เปิด Multi-language content (จีน/เกาหลี/อังกฤษ)<br>
-        ✅ Influencer ต่างชาติ 2+ คน/เดือน<br>
-        ✅ Partnership กับ OTA + โรงแรม<br>
-        ✅ Mega Influencer Campaign</p>
+      <div style="flex:1;border:1.5px solid var(--bd);border-radius:10px;padding:12px;border-top:4px solid var(--fb);">
+        <div style="display:flex;align-items:center;gap:5px;margin-bottom:5px;"><span style="font-size:18px;">📘</span><h4 style="font-size:13px;font-weight:700;color:var(--g3);margin:0;">Facebook Ads</h4></div>
+        <p style="font-size:10px;color:var(--tx2);line-height:1.5;margin:0;">
+          <strong>รูปแบบ:</strong> Video Ads, Carousel, Reels Ads<br>
+          <strong>กลุ่ม:</strong> Lookalike จาก IO + ครอบครัว<br>
+          <strong>เป้า:</strong> Traffic → Landing Page → ซื้อตั๋ว<br>
+          <strong>จุดเด่น:</strong> Targeting แม่นยำ ครอบคลุมทุกวัย
+        </p>
       </div>
     </div>
 
+    <div class="hl gold"><strong>กลยุทธ์ IO + Ads:</strong> ใช้ IO สร้าง Engagement → นำ Data มาทำ Lookalike → ยิง Ads เจาะกลุ่มพฤติกรรมคล้ายกัน → ลด Cost per Result 30-50%</div>
+    <div class="hl green"><strong>งบแอดแนะนำ:</strong> เริ่มต้น 50,000-100,000 บาท/เดือน → ปรับตาม ROAS &nbsp;|&nbsp; <strong>เป้า ROAS:</strong> 3x ขึ้นไป</div>
+    <div class="hl blue" style="font-size:10px;"><strong>* หมายเหตุ:</strong> สามารถเพิ่ม YouTube Ads, LINE Ads หรือ Retargeting ได้ในอนาคตตามผลลัพธ์จริง</div>
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 7: Budget -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">7 / 8</div></div>
+<!-- SLIDE 10: SEO + AEO -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">9</span><div class="sl-title">เว็บไซต์ + SEO + AEO — ครอง Google & AI Search</div></div>
+  <div class="sl-body">
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:6px;">Gen Z ค้นหาผ่าน Google และ <strong>AI Search (ChatGPT, Gemini, Perplexity)</strong> — ต้องออกแบบเว็บให้ติดอันดับทั้งสองระบบ</div>
 
-    <div class="st"><span class="sn">8</span><h2>งบประมาณ</h2><div class="st-line"></div></div>
-
-    <div class="sub">8.1 ค่าบริการรายเดือน</div>
-    <table class="pt">
-      <tr><th>รายการ</th><th>รายเดือน (บาท)</th><th>หมายเหตุ</th></tr>
-      <tr><td>Content Production (ถ่ายภาพ/วิดีโอ/กราฟิก — 60+ ชิ้น/เดือน)</td><td>45,000</td><td>ทีมถ่ายทำ + กราฟิก + Copywriting</td></tr>
-      <tr><td>Social Media Management (โพสต์/ตอบ/Community — 6 แพลตฟอร์ม)</td><td>35,000</td><td>จัดการทุกวัน รวม Sat-Sun</td></tr>
-      <tr><td>IO Distribution (กระจายผ่านเครือข่ายเพจ/บัญชี)</td><td>30,000</td><td>บริหารเครือข่าย IO ทุกแพลตฟอร์ม</td></tr>
-      <tr><td>Influencer Budget</td><td>80,000</td><td>Mega 1 + Macro 3 + Micro 10</td></tr>
-      <tr><td>PR & Media Relations</td><td>20,000</td><td>ส่งข่าว, ประสาน Press Trip</td></tr>
-      <tr><td>Analytics & Reporting</td><td>10,000</td><td>Tools + จัดทำรายงาน</td></tr>
-      <tr><td>Strategy & Consulting</td><td>30,000</td><td>วางแผน, ประชุมรายสัปดาห์, ปรับกลยุทธ์</td></tr>
-      <tr class="tr-t"><td><strong>รวมรายเดือน</strong></td><td><strong>250,000</strong></td><td></td></tr>
-    </table>
-
-    <div class="sub">8.2 ค่าเริ่มต้น (One-time Setup)</div>
-    <table class="pt">
-      <tr><th>รายการ</th><th>งบประมาณ (บาท)</th></tr>
-      <tr><td>Social Audit + Strategy Document + Visual Identity Design</td><td>50,000</td></tr>
-      <tr><td>ถ่ายภาพ/วิดีโอ Stock ชุดแรก (Drone + Ground — 2 วัน)</td><td>60,000</td></tr>
-      <tr><td>Setup เครือข่าย IO + Analytics Tracking ทุกแพลตฟอร์ม</td><td>15,000</td></tr>
-      <tr class="tr-t"><td><strong>รวมค่าเริ่มต้น</strong></td><td><strong>125,000</strong></td></tr>
-    </table>
-
-    <div class="sub">8.3 สรุปงบ 6 เดือน</div>
-    <table class="pt">
-      <tr><th>รายการ</th><th>จำนวน (บาท)</th></tr>
-      <tr><td>ค่าเริ่มต้น (ครั้งเดียว)</td><td>125,000</td></tr>
-      <tr><td>ค่าบริการรายเดือน × 6 เดือน</td><td>1,500,000</td></tr>
-      <tr class="tr-t"><td><strong>รวมทั้งโครงการ 6 เดือน</strong></td><td><strong>1,625,000</strong></td></tr>
-    </table>
-
-    <div class="hb gold">
-      <strong>ROI ประมาณการ:</strong> หากเพิ่มนักท่องเที่ยวจาก IO 3,000+ คน/เดือน × ค่าตั๋วเฉลี่ย 400 บาท = รายได้เพิ่ม 1.2 ล้าน/เดือน (ยังไม่รวมค่าอาหาร/ของที่ระลึก) — <strong>ลงทุน 250K ได้คืน 1.2M+ = ROI 5 เท่า</strong>
+    <div style="display:flex;gap:10px;margin:6px 0;">
+      <div class="seo-col" style="border-color:#4285F4;">
+        <h4><span style="color:#4285F4;">🔍</span> SEO — ติดอันดับ Google</h4>
+        <ul>
+          <li>Keyword Research เจาะ Gen Z</li>
+          <li>On-Page SEO: Title, Meta, Header</li>
+          <li>Blog Content 8-12 บทความ/เดือน</li>
+          <li>Technical SEO: Core Web Vitals, Mobile-First</li>
+          <li>Local SEO: Google Business Profile</li>
+          <li>Backlink จาก IO + PR สื่อออนไลน์</li>
+        </ul>
+      </div>
+      <div class="seo-col" style="border-color:#7B1FA2;">
+        <h4><span style="color:#7B1FA2;">🤖</span> AEO — ติดผลลัพธ์ AI Search</h4>
+        <ul>
+          <li>Schema Markup (FAQ, Event, Place)</li>
+          <li>เขียนแบบ Q&A ตอบคำถามตรง ๆ</li>
+          <li>Structured Data ให้ AI อ่านง่าย</li>
+          <li>Entity Building: สร้างตัวตนใน Knowledge Graph</li>
+          <li>FAQ Page 50+ คำถาม-คำตอบ</li>
+          <li>Citation Building ให้ AI อ้างอิงเว็บเรา</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="sub">8.4 แพ็กเกจทางเลือก</div>
-    <table>
-      <tr><th>แพ็กเกจ</th><th>ขอบเขต</th><th>รายเดือน (บาท)</th></tr>
-      <tr><td>🥉 Starter</td><td>3 แพลตฟอร์ม (FB/IG/TikTok) + 30 ชิ้น/เดือน + IO เครือข่ายพื้นฐาน</td><td>150,000</td></tr>
-      <tr><td>🥈 Professional</td><td>6 แพลตฟอร์ม + 60 ชิ้น/เดือน + IO เต็มเครือข่าย + Influencer</td><td>250,000</td></tr>
-      <tr><td>🥇 Enterprise</td><td>ทุกอย่างใน Pro + Multi-language + OTA Partnership + Event</td><td>380,000</td></tr>
-    </table>
+    <div style="font-size:11px;font-weight:700;color:var(--g3);margin:6px 0 4px;">เว็บไซต์ออกแบบเพื่อ Gen Z</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;gap:6px;">
+      <div class="web-card"><div class="wi">⚡</div><h4>เร็ว Mobile-First</h4><p>โหลดไม่เกิน 2 วิ<br>UX เพื่อนิ้วโป้ง</p></div>
+      <div class="web-card"><div class="wi">🎫</div><h4>จองตั๋ว 3 คลิก</h4><p>PromptPay / Wallet<br>E-ticket มือถือ</p></div>
+      <div class="web-card"><div class="wi">🗺️</div><h4>Interactive Map</h4><p>แผนที่ในสวน<br>จุดถ่ายรูปเด็ด</p></div>
+      <div class="web-card"><div class="wi">🌐</div><h4>Multi-Language</h4><p>ไทย / EN / 中 / 한<br>hreflang SEO</p></div>
+      <div class="web-card"><div class="wi">📝</div><h4>Blog Hub</h4><p>บทความ SEO/AEO<br>UGC Gallery</p></div>
+      <div class="web-card"><div class="wi">📊</div><h4>Analytics</h4><p>GA4 + Pixel<br>Conversion Track</p></div>
+    </div>
 
+    <div class="hl blue" style="font-size:10px;margin-top:6px;">
+      <strong>เป้าหมาย:</strong> Top 10 Google Keywords หลักใน 3 เดือน &nbsp;|&nbsp; เพิ่ม Organic Traffic +50% ใน 6 เดือน &nbsp;|&nbsp; เว็บพร้อมรองรับ AI Search
+    </div>
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
 </div>
 
-<!-- PAGE 8: Why Us + Contact -->
-<div class="pg">
-  <div class="ct">
-    <div class="ph"><div class="dt">IO Solution — สวนนงนุช พัทยา</div><div class="pn">8 / 8</div></div>
+<!-- SLIDE 11: SEO/AEO Flow -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">10</span><div class="sl-title">SEO + AEO — กระบวนการทำงาน</div></div>
+  <div class="sl-body">
+    <div style="font-size:12px;font-weight:700;color:var(--g3);margin-bottom:5px;">SEO/AEO Workflow</div>
+    <div style="display:flex;gap:0;justify-content:center;margin:6px 0;">
+      <div class="sf-box" style="border-top:3px solid #4285F4;"><div class="si">🔎</div><div class="st">Keyword Research</div><div class="sd">วิเคราะห์คำค้นหา Gen Z<br>+ คำถามที่ถาม AI<br>จัด Keyword Clusters</div></div>
+      <div class="sf-arr">→</div>
+      <div class="sf-box" style="border-top:3px solid var(--g1);"><div class="si">✍️</div><div class="st">Content Creation</div><div class="sd">เขียน Blog 1,500+ คำ<br>FAQ + Schema Markup<br>Q&A Format สำหรับ AEO</div></div>
+      <div class="sf-arr">→</div>
+      <div class="sf-box" style="border-top:3px solid #7B1FA2;"><div class="si">⚙️</div><div class="st">Technical SEO</div><div class="sd">Core Web Vitals<br>Mobile Optimization<br>Structured Data / Schema</div></div>
+      <div class="sf-arr">→</div>
+      <div class="sf-box" style="border-top:3px solid var(--gold);"><div class="si">🔗</div><div class="st">Link Building</div><div class="sd">IO → Backlink จากสื่อ<br>PR Online 10+ สำนัก<br>Social Signal Boost</div></div>
+      <div class="sf-arr">→</div>
+      <div class="sf-box" style="border-top:3px solid #E65100;"><div class="si">📈</div><div class="st">Monitor & Optimize</div><div class="sd">Track อันดับ Google<br>ตรวจผลลัพธ์ AI Search<br>ปรับ Content ต่อเนื่อง</div></div>
+    </div>
 
-    <div class="st"><span class="sn">9</span><h2>ทำไมต้อง Content Digital Marketing</h2><div class="st-line"></div></div>
-
-    <div class="mg">
-      <div class="mc">
-        <div class="ic">🎯</div>
-        <h4>เชี่ยวชาญ IO โดยเฉพาะ</h4>
-        <p>บริษัทที่เน้นปฏิบัติการข้อมูลข่าวสารและ Digital Marketing เป็นแกนหลัก ไม่ใช่บริษัท IT ที่ทำการตลาดเป็นงานรอง</p>
+    <div style="font-size:12px;font-weight:700;color:var(--g3);margin:10px 0 4px;">ตัวอย่าง Keywords & AI Questions เจาะ Gen Z</div>
+    <div style="display:flex;gap:10px;">
+      <div style="flex:1;">
+        <div style="font-size:10px;font-weight:700;color:#4285F4;margin-bottom:3px;">🔍 SEO Keywords</div>
+        <div style="background:var(--bg);border-radius:7px;padding:8px;font-size:9.5px;color:var(--tx2);line-height:1.7;">
+          "ที่เที่ยวพัทยา 2569 ถ่ายรูปสวย"<br>
+          "สวนนงนุช ราคาเท่าไหร่"<br>
+          "Nong Nooch Garden review"<br>
+          "พัทยา ไปไหนดี วันหยุด"
+        </div>
       </div>
-      <div class="mc gl">
-        <div class="ic">📱</div>
-        <h4>ครบทุก Platform</h4>
-        <p>ทีมที่เข้าใจธรรมชาติของแต่ละแพลตฟอร์ม — Facebook ≠ TikTok ≠ X สร้างคอนเทนต์เฉพาะทาง ไม่ใช่ Copy-Paste</p>
-      </div>
-      <div class="mc gl">
-        <div class="ic">📊</div>
-        <h4>Data-driven</h4>
-        <p>ทุกการตัดสินใจอิงจากข้อมูล — ไม่ได้เดาว่าอะไรจะ Work วัดผลทุก Post ทุก Campaign ปรับเร็ว</p>
-      </div>
-      <div class="mc">
-        <div class="ic">🚀</div>
-        <h4>ผลลัพธ์ ไม่ใช่แค่ยอดไลค์</h4>
-        <p>เป้าหมายคือ "คนเข้าสวนเพิ่ม" ไม่ใช่แค่ Vanity Metrics — วัดจนถึง Conversion จริง</p>
+      <div style="flex:1;">
+        <div style="font-size:10px;font-weight:700;color:#7B1FA2;margin-bottom:3px;">🤖 AEO — คำถามที่ Gen Z ถาม AI</div>
+        <div style="background:var(--bg);border-radius:7px;padding:8px;font-size:9.5px;color:var(--tx2);line-height:1.7;">
+          "สวนนงนุช ดีไหม ไปคุ้มมั้ย?"<br>
+          "ที่เที่ยวพัทยาที่ถ่ายรูป aesthetic ได้"<br>
+          "Plan 1 day trip Pattaya with garden"<br>
+          "สวนนงนุช มีอะไรบ้าง ใช้เวลากี่ชม"
+        </div>
       </div>
     </div>
 
-    <div class="cta">
+    <div class="hl green" style="margin-top:6px;font-size:10px;">
+      <strong>IO ช่วย SEO/AEO:</strong> ยิ่งมี Social Signal มาก → Google & AI ยิ่งให้ความสำคัญ → อันดับขึ้นเร็วขึ้น = Flywheel Effect
+    </div>
+  </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
+</div>
+
+<!-- SLIDE 12: KPI + Timeline -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">11</span><div class="sl-title">KPI & แผนดำเนินงาน</div></div>
+  <div class="sl-body">
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kn">100K+</div><div class="kl">Reach / เดือน</div></div>
+      <div class="kpi"><div class="kn">3-5%</div><div class="kl">Engagement Rate</div></div>
+      <div class="kpi"><div class="kn">10K+</div><div class="kl">Follower ใหม่ (6 เดือน)</div></div>
+      <div class="kpi"><div class="kn">Top 10</div><div class="kl">Google Keywords หลัก</div></div>
+    </div>
+    <div class="kpi-grid" style="margin-top:0;">
+      <div class="kpi"><div class="kn">+50%</div><div class="kl">Web Traffic เพิ่ม</div></div>
+      <div class="kpi"><div class="kn">+15%</div><div class="kl">ตั๋ว Online เพิ่ม</div></div>
+      <div class="kpi"><div class="kn">3x</div><div class="kl">ROAS จาก Paid Ads</div></div>
+      <div class="kpi"><div class="kn">60+</div><div class="kl">ชิ้นคอนเทนต์ / เดือน</div></div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item p1">
+        <h4>Phase 1 — Setup</h4>
+        <div class="td">เดือนที่ 1</div>
+        <p>✅ Audit Social + เว็บไซต์<br>✅ สร้าง Visual Identity<br>✅ พัฒนาเว็บ + SEO/AEO<br>✅ เริ่มโพสต์ + Blog<br>✅ Setup IO + Ads Pixel</p>
+      </div>
+      <div class="tl-item p2">
+        <h4>Phase 2 — Scale</h4>
+        <div class="td">เดือนที่ 2-3</div>
+        <p>✅ TikTok Challenge Gen Z<br>✅ IO + Ads เต็มกำลัง<br>✅ Blog SEO/AEO 24 บทความ<br>✅ PR สื่อออนไลน์ 10 สำนัก<br>✅ Community Management 7 วัน</p>
+      </div>
+      <div class="tl-item p3">
+        <h4>Phase 3 — Optimize</h4>
+        <div class="td">เดือนที่ 4-6</div>
+        <p>✅ วิเคราะห์ Data → ปรับ<br>✅ Multi-language SEO/AEO<br>✅ ขยาย Ads ต่างชาติ<br>✅ OTA + โรงแรม Partnership<br>✅ Retargeting เต็มระบบ</p>
+      </div>
+    </div>
+
+    <div class="hl green" style="font-size:10px;"><strong>Reporting:</strong> Weekly Report ทุกจันทร์ + Monthly Report สรุป KPI vs เป้าหมาย + Insight + แผนปรับกลยุทธ์</div>
+  </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
+</div>
+
+<!-- SLIDE 13: Budget -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">12</span><div class="sl-title">งบประมาณ</div></div>
+  <div class="sl-body">
+    <div class="bud-row">
+      <div class="bud-card" style="background:var(--g1);"><div class="bn">185,000</div><div class="bl">ค่าเริ่มต้น (เว็บ + Setup)</div></div>
+      <div class="bud-card" style="background:var(--g3);"><div class="bn">300,000</div><div class="bl">ค่าบริการ / เดือน</div></div>
+      <div class="bud-card" style="background:var(--gold-d);"><div class="bn">1,985,000</div><div class="bl">รวม 6 เดือน</div></div>
+    </div>
+
+    <div class="pkg-row">
+      <div class="pkg">
+        <div class="pe">🥉</div>
+        <h4>Starter</h4>
+        <div class="price">180,000/เดือน</div>
+        <p style="text-align:left;font-size:9px;line-height:1.5;">
+          ✅ ดูแล 3 แพลตฟอร์ม (TikTok, FB, IG)<br>
+          ✅ คอนเทนต์ 30 ชิ้น/เดือน<br>
+          ✅ Blog SEO 4 บทความ/เดือน<br>
+          ✅ เว็บไซต์ SEO พื้นฐาน<br>
+          ✅ IO เครือข่ายพื้นฐาน<br>&nbsp;&nbsp;&nbsp;&nbsp;(กระจายผ่านเพจ+กลุ่ม 10 ช่อง)<br>
+          ✅ Ads บริหารงบ 30K/เดือน<br>
+          ✅ Weekly Report
+        </p>
+      </div>
+      <div class="pkg featured">
+        <div class="pe">🥈</div>
+        <h4>Professional</h4>
+        <div class="price">300,000/เดือน</div>
+        <p style="text-align:left;font-size:9px;line-height:1.5;">
+          ✅ ดูแลครบ 6 แพลตฟอร์ม<br>&nbsp;&nbsp;&nbsp;&nbsp;(TikTok, IG, FB, X, YT, LINE)<br>
+          ✅ คอนเทนต์ 60 ชิ้น/เดือน<br>
+          ✅ Blog SEO/AEO 8 บทความ/เดือน<br>
+          ✅ เว็บไซต์ SEO + AEO + Schema<br>
+          ✅ IO เต็มเครือข่าย ทุก Platform<br>&nbsp;&nbsp;&nbsp;&nbsp;(เพจ+กลุ่ม+บัญชี 20+ ช่อง)<br>
+          ✅ Ads บริหารงบ 80K/เดือน<br>
+          ✅ Community Management 7 วัน<br>
+          ✅ Weekly + Monthly Report
+        </p>
+      </div>
+      <div class="pkg">
+        <div class="pe">🥇</div>
+        <h4>Enterprise</h4>
+        <div class="price">450,000/เดือน</div>
+        <p style="text-align:left;font-size:9px;line-height:1.5;">
+          ✅ ทุกอย่างใน Professional<br>
+          ✅ Multi-language SEO/AEO<br>&nbsp;&nbsp;&nbsp;&nbsp;(ไทย/EN/จีน/เกาหลี)<br>
+          ✅ Ads บริหารงบ 150K/เดือน<br>
+          ✅ ลงพื้นที่ถ่ายทำ 2 ครั้ง/เดือน<br>
+          ✅ Retargeting ครบทุก Platform<br>
+          ✅ Dashboard รายงานแบบ Real-time
+        </p>
+      </div>
+    </div>
+
+    <div class="hl gold" style="text-align:center;">
+      <strong>ROI:</strong> ลงทุน 300K → คาดการณ์รายได้เพิ่ม 900K+/เดือน = <strong style="font-size:16px;color:var(--g1);">ROI 3 เท่า</strong> &nbsp;|&nbsp; งบ Ads รวมอยู่ในแพ็คเกจแล้ว
+    </div>
+  </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>Confidential</span></div>
+</div>
+
+<!-- SLIDE 14: Why Us + CTA -->
+<div class="slide">
+  <div class="sl-head"><span class="sl-num">13</span><div class="sl-title">ทำไมต้อง Content Digital Marketing</div></div>
+  <div class="sl-body">
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">🎯</div><div class="why-text"><h4>เชี่ยวชาญ IO + Ads + SEO/AEO</h4><p>รวม Social, Paid Ads และ Search Optimization ไว้ด้วยกัน — ไม่ต้องจ้างหลายบริษัท</p></div></div>
+      <div class="why-card"><div class="why-icon">🧠</div><div class="why-text"><h4>เข้าใจ Gen Z</h4><p>ทีมงานรุ่นใหม่ที่เข้าใจพฤติกรรม Gen Z รู้เทรนด์ รู้ภาษา สร้างคอนเทนต์ที่โดน</p></div></div>
+      <div class="why-card"><div class="why-icon">📊</div><div class="why-text"><h4>Data-driven ทุกมิติ</h4><p>วัดผลทุก Post, ทุก Keyword, ทุก Campaign — ข้อมูลจาก Social + SEO + Ads รวมเป็นภาพเดียว</p></div></div>
+      <div class="why-card"><div class="why-icon">🚀</div><div class="why-text"><h4>ผลลัพธ์คือ "คนเข้าสวนเพิ่ม"</h4><p>ไม่ใช่แค่ยอดไลค์ — วัด Conversion จริง ตั้งแต่เห็นโพสต์จนซื้อตั๋ว</p></div></div>
+    </div>
+
+    <div class="cta-box">
       <h3>พร้อมเปลี่ยนสวนนงนุชให้เป็นกระแสในโลกออนไลน์</h3>
-      <p>ด้วย Information Operations ครบวงจร — ให้ทุกคนรู้จัก อยากมา และบอกต่อ<br>
-      Facebook &bull; TikTok &bull; X &bull; Instagram &bull; YouTube &bull; LINE</p>
+      <p>IO + Paid Ads + SEO/AEO + เว็บไซต์ — ให้ Gen Z รู้จัก อยากมา ถ่ายรูปลง IG และบอกต่อ</p>
     </div>
 
-    <div style="margin-top:24px;padding:18px;background:var(--bg);border-radius:12px;border:1px solid var(--bd);">
-      <div style="display:flex;justify-content:space-between;">
-        <div>
-          <div style="font-size:9.5px;color:var(--gold-d);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">เสนอโดย</div>
-          <div style="font-weight:700;font-size:15px;color:var(--g3);">บริษัท คอนเท็นท์ ดิจิตอล มาเก็ตติ้ง จำกัด</div>
-          <div style="color:var(--tx2);font-size:12px;margin-top:4px;">Content Digital Marketing Co., Ltd.</div>
-        </div>
-        <div style="text-align:right;">
-          <div style="font-size:9.5px;color:var(--gold-d);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">ผู้ติดต่อ</div>
-          <div style="font-weight:600;color:var(--tx);font-size:13px;">___________________</div>
-          <div style="color:var(--tx2);font-size:12px;margin-top:3px;">โทร: _______________</div>
-          <div style="color:var(--tx2);font-size:12px;">Email: _______________</div>
-          <div style="color:var(--tx2);font-size:12px;">LINE: _______________</div>
-        </div>
-      </div>
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--tx2);margin-top:6px;">
+      <div><strong style="color:var(--g3);">บริษัท คอนเท็นท์ ดิจิตอล มาเก็ตติ้ง จำกัด</strong><br>Content Digital Marketing Co., Ltd.</div>
+      <div style="text-align:right;">โทร: _______________ &nbsp;|&nbsp; Email: _______________ &nbsp;|&nbsp; LINE: _______________</div>
     </div>
-
-    <div class="fn">
-      เอกสารนี้เป็นความลับ จัดทำขึ้นเพื่อเสนอต่อสวนนงนุช พัทยา เท่านั้น | PROP-NN-IO-2026 | © 2569 Content Digital Marketing Co., Ltd.
-    </div>
-
   </div>
+  <div class="sl-foot"><span>Content Digital Marketing Co., Ltd.</span><span>PROP-NN-IO-2026 | Confidential</span></div>
 </div>
 
 </body>
